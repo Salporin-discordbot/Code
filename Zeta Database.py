@@ -29,7 +29,7 @@ async def on_server_join(server):
 async def on_member_join(member):
     joinserver=member.server
     text001="**{}**, welcome to ".format(member)
-    text002=text001 + "**{}**. Have a geat time here!".format(joinserver)
+    text002=text001 + "**{}**. Have a great time here!".format(joinserver)
     embed=discord.Embed(title='Member joined', color=discord.Colour(0x9CD3E8), description=text002)
     embed.set_thumbnail(url="https://emojipedia-us.s3.amazonaws.com/thumbs/120/twitter/103/waving-hand-sign_1f44b.png")
     await bot.send_message(joinserver, embed=embed)    
