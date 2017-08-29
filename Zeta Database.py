@@ -407,8 +407,7 @@ Raids: 7 - AAT Raids
 Overall: 24/30
         """)
         embed.add_field(name="Priority", value="Medium")
-        embed.add_field(name="Editors Note", value="Good zeta. Your allies will be recovering Health frequently and Barris will dispel all debuffs from an ally w/ the lowest Health.")
-        )
+        embed.add_field(name="Editors Note", value="Good zeta. Your allies will be recovering Health frequently and Barris will dispel all debuffs from an ally w/ the lowest Health.")        
         
         await bot.send_message(message.channel, embed=embed)
 
@@ -427,7 +426,7 @@ Raids: 6 - None
 Overall: 24.25/30
         """)
         embed.add_field(name="Priority", value="Medium")
-        embed.add_field(name="Editors Note", value="Incredible zeta. This will turn the tide of the battles and keep Boba stays alive longer.")
+        embed.add_field(name="Editors Note", value="Incredible zeta. This will might turn the tide of the battles and keep Boba stays alive longer.")
         
         
         await bot.send_message(message.channel, embed=embed)
