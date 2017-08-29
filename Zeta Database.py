@@ -37,7 +37,7 @@ async def on_message(message):
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9.5          
 Arena: 8 - W/ Any teams       
-Raids: 9 - hAAT P1 Solo (nerfed, but still able to solo, if you have some good RNG.)  
+Raids: 9 - HAAT P1 Solo (Nerfed, but still able to solo, if you have some good RNG.)  
 
 Overall: 26.75/30 
         """)
@@ -55,7 +55,7 @@ Overall: 26.75/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7.5          
 Arena: 8 - W/ First Order (FO team needs to be fully zeta'd - 4 zetas)       
-Raids: 7 - Usage in First order P2 team
+Raids: 7 - Usable in First order P2 team
 
 Overall: 23.5/30
         """)
@@ -74,7 +74,7 @@ Overall: 23.5/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7.5          
 Arena: 7 - W/ Empire teams      
-Raids: 8 - P1 hAAT sink 
+Raids: 8 - P1 HAAT Sink 
 
 Overall: 22.5/30
         """)
@@ -111,7 +111,7 @@ Overall: 22.5/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8          
 Arena: 8 - W/ zQGJ teams      
-Raids: 6 - not a big improvement for raids. 
+Raids: 6 - Not a big improvement for raids. 
 
 Overall: 21/30
         """)
@@ -205,7 +205,7 @@ Overall: 12/30
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8         
-Arena: 7.25      
+Arena: 7.25 - W/ Jedi teams      
 Raids: 7 - AAT Raids  
 
 Overall: 22.5/30
@@ -225,7 +225,7 @@ Overall: 22.5/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8         
 Arena: 7.5 - W/ Rebel teams     
-Raids: 5.5 - None 
+Raids: 5.5 - This zetanot gonna help much anyway! 
 
 Overall: 21/30
         """)
@@ -269,7 +269,7 @@ Raids: 9.5 - AAT Raids
 Overall: 29.25/30
         """)
         embed.add_field(name="Priority", value="High")
-        embed.add_field(name="Editors Note", value="Highly recommended zeta. LS characters cleanse themselves ")
+        embed.add_field(name="Editors Note", value="Highly recommended zeta. LS characters cleanse themselves whenever they score a Critical Hit")
         
         await bot.send_message(message.channel, embed=embed)
 
@@ -288,7 +288,7 @@ Raids: 9.5 - AAT Raids
 Overall: 29.25/30
         """)
         embed.add_field(name="Priority", value="High")
-        embed.add_field(name="Editors Note", value="Amazing zeta. Some characters will gain certain bonus based on their factions.")
+        embed.add_field(name="Editors Note", value="Amazing zeta. Some characters will gain certain bonus depending on their factions.")
         
         
         await bot.send_message(message.channel, embed=embed)
@@ -324,7 +324,7 @@ Overall: 26.5/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
 Arena: 9.25 - W/ Sith teams      
-Raids: 10 - AAT Raids
+Raids: 10 - AAT Raids (Able to Solo P3 HAAT)
 
 Overall: 27.25/30
         """)
