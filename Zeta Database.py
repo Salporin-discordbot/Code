@@ -1616,8 +1616,8 @@ Overall: 20/30
     if message.content.startswith("!Darth-Maul"): 
         embed=discord.Embed(title="Darth Maul",color=discord.Colour(0x62779D), description="Deadly Attacker that gains power and extra turns as enemies are defeated")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
-        embed.set_thumbnail(url=?)
-        embed.set_image(url=?)
+        embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_maul.png")
+        embed.set_image(url="https://vignette4.wikia.nocookie.net/starwars/images/5/50/Darth_Maul_profile.png")
         embed.add_field(name="<:zeta:327437604465278977>", value="1 Zeta ability: Dancing Shadows")
         embed.add_field(name="Stats", value="`Power: 19101` `Speed: 100` `Health: 14,319` (<:gearicong111:330366020365713408>, without mods)")
         embed.add_field(name="Basic Ability - Raging Storm - <:MaulBasic:343784947468992523>", value="Deal Physical damage to target enemy. On a finishing blow, gain 100% Turn Meter and Offense Up for 2 turns. This attack deals double damage to Jedi.")
