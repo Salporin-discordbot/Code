@@ -40,7 +40,7 @@ async def on_message(message):
                   
 
     if message.content.startswith('!f2p-guide'):
-        await client.send_message(message.channel, 'https://forums.galaxy-of-heroes.starwars.ea.com/discussion/86926/adaptive-f2p-guide this is a good guide Mischka found. Follow the guide, and u will farm zetas soon! Cheers!')
+        await client.send_message(message.channel, 'https://forums.galaxy-of-heroes.starwars.ea.com/discussion/86926/adaptive-f2p-guide This is a good guide Mischka found. Follow the guide, and you will farm Zetas soon! Cheers!')
         return
 
     if message.content.startswith('!stats'):
@@ -107,23 +107,23 @@ async def on_message(message):
         return
 
 
-    if message.content.startswith('!bots-help'):
+    if message.content.startswith('!Bots-help'):
         if message.server.id =='331114285432307723':
-            embed=discord.Embed(title="Bots help - ΣΔ Legends HQ", color=discord.Colour(0x696969), description="""
+            embed=discord.Embed(title="Bots help - The Mighty Deathstar", color=discord.Colour(0x696969), description="""
 To find information about non-zeta and/or zeta characters:
     ☆  Type "![charname]" for non-zeta characters 
     ☆  Type "!z[charname]" for zeta characters 
 E.g "!Admiral-Ackbar" and it will give you full info about Admiral Ackbar.
-       "!zThrawn" and it will give you Thrawn's Zeta Abilities.
+    "!zThrawn" and it will give you Thrawn's Zeta Abilities.
 """)
-            embed.set_footer(text="Salporin | Custom Command | ΣΔ Legends HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
+            embed.set_footer(text="Salporin | Custom Command | The Mighty Deathstar HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
             await client.send_message(message.channel, embed=embed)
             return
         
         
-    if message.content.startswith('!recruiting-help'):
+    if message.content.startswith('!Preference-help'):
         if message.server.id =='331114285432307723':
-            embed=discord.Embed(title="Recruiting help - ΣΔ Legends HQ", color=discord.Colour(0x696969), description="""
+            embed=discord.Embed(title="Recruiting help - The Mighty Deathstar HQ", color=discord.Colour(0x696969), description="""
 Please post like this:
 [Time zone: GMT/EST/PDT]
 [Daily Reset: xx:xx]
@@ -132,73 +132,63 @@ Please post like this:
 [Location: Country - City/Town]
 [SWGOH Name: Your IGN]
 """)
-            embed.set_footer(text="Salporin | Custom Command | ΣΔ Legends HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
+            embed.set_footer(text="Salporin | Custom Command | The Mighty Deathstar HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
             await client.send_message(message.channel, embed=embed)
             return
         
-    if message.content.startswith('!mods-help'):
+    if message.content.startswith('!Mods-help'):
         if message.server.id =='331114285432307723':
-            embed=discord.Embed(title="Mods help - ΣΔ Legends HQ", color=discord.Colour(0x696969), description="""
+            embed=discord.Embed(title="Mods help - The Mighty Deathstar HQ", color=discord.Colour(0x696969), description="""
 To find the mods info for specific characters,
     ☆  Type: ";mods [charname]"
 """)
-            embed.set_footer(text="Salporin | Custom Command | ΣΔ Legends HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
+            embed.set_footer(text="Salporin | Custom Command | The Mighty Deathstar HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
             await client.send_message(message.channel, embed=embed)
             return
         
         
     if message.content.startswith('!Game-rules'):
         if message.server.id =='331114285432307723':
-            embed=discord.Embed(title="In-Game Rules - ΣΔ Legends HQ", color=discord.Colour(0x696969), description="""
+            embed=discord.Embed(title="In-Game Rules - The Mighty Deathstar HQ", color=discord.Colour(0x696969), description="""
 3. **BE ACTIVE**, We are very happy to have you with us here. So be active, as a part of a community. If you having trouble about guild tickets, contact your guild officers/leader!.
 5. **CREATE YOUR SWGOH.GG ACCOUNT**, if you are a SWGoH players and don't have "swgoh.gg" account, go to https://swgoh.gg/accounts/login. If you already have one, go to -> <#331115555694182403> and post your link there.
 6. **PLAY OFTEN**, we are very active throughout the day, so we highly recommended for your contribution that you should do 600 Tickets everyday. If you don't know how to do that, ask your guild officers:)
-7. **THREE-STRIKES SYSTEM**, in case there are a lot of violations or negativity in this server, so we created the "Three-Strikes System", so each time you make a mistake in-game or here, you will receive a punishments in the following below:
+7. **FIVE-STRIKES SYSTEM**, in case there are a lot of violations or negativity in this server, so we created the "Three-Strikes System", so each time you make a mistake in-game or here, you will receive a punishments in the following below:
 
      ☆  1st Strike: 0-Damage in the next raid (You will still receive a reward)
-     ☆  2nd Strike: Temporary boot for the guild until that raid end. You will be re-invite after the raid ended.
-     ☆  3rd Strike: Removal from guild
-11. **RAID TICKETS**, We want to do raids as soon as possible, so if you do 600 everyday, that mean 4200 tickets per week. So if you don't reach 4200 each week, you will receive a strike due to your tickets: 
-     ☆  Anyone between 3600 to 4199 will receive 1 strike
-     ☆  Anyone below 3600 will receive 2 strikes
-     ☆  Anyone below 3000 will receive 3 strikes
+     ☆  2nd-4th Strike: Temporary boot for the guild until that raid end. You will be re-invite after the raid ended.
+     ☆  5th Strike: Removal from guild
 """)
-            embed.set_footer(text="Salporin | Custom Command | ΣΔ Legends HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
+            embed.set_footer(text="Salporin | Custom Command | The Mighty Deathstar HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
             await client.send_message(message.channel, embed=embed)
             return
         
                 
     if message.content.startswith('!Discord-rules'):
         if message.server.id =='331114285432307723':
-            embed=discord.Embed(title="Discord Rules - ΣΔ Legends HQ", color=discord.Colour(0x696969), description="""
-1. VIOLATIONS, We don't like negativity here so everyone will have arguments sometimes but we will not accept violations that go to far... Contact one of our Officers to have a fair arguments
-2. BE KIND, We appreciate everyone of you who joined here. We also like to request that you need to be nice and thankful for what you received! :smiley:
-4. INVITE YOUR FRIENDS HERE, if you have friend(s) that is/are needing a guild... Use this link: https://discord.gg/FezMJ7H and invite them here
-joined cantina
-8. IF YOU'RE GOING AWAY, in case you know that you're going for a vacation and you can't access the game for a few days, post your duration of days/weeks that you're going away, and the reason in the -> <#331115094014558209> channel.
-9. GET INVOLVED, 
+            embed=discord.Embed(title="Discord Rules - The Mighty Deathstar HQ", color=discord.Colour(0x696969), description="""
+1. **VIOLATIONS**, We don't like negativity here so if you have an argument with someone, go to DM, this is a public chat... Or contact one of our Officers to have a fair arguments(edited)
+2. **BE KIND**, We appreciate everyone of you who joined here. We also like to request that you need to be nice and thankful for what you received! :smiley:(edited)
+3. **BE ACTIVE**, We are very happy to have you with us here. So be active, as a part of a community. If you having trouble about guild tickets, contact your guild officers/leader!(edited)
+4. **INVITE YOUR FRIENDS HERE**, if you have friend(s) that is/are needing a guild or want to talk with me or anyone in this server... Use this link: https://discord.gg/FezMJ7H or type Invite in #off_topic  and invite them here
+9. **GET INVOLVED**, 
 
   ☆  Share us your fortune -> <#331116400334602241> 
-  ☆  Help us improve this server -> <#331121104456515586> 
+  ☆  Help us improve this server -> <#352024734252400650>
   ☆  Be a part of this community -> <#331114285432307723>
 10. BE ACTIVE, As a part of a community, we recommended you to do all of these!
 
   ☆  Check the server twice per day!
-  ☆ Contribute 600 Raid Tickets everyday! (Minimum of 300)
-11. RAID TICKETS, We want to do raids as soon as possible, so if you do 600 everyday, that mean 4200 tickets per week. So if you don't reach 4200 each week, you will receive a strike due to your tickets: 
-     ☆  Anyone between 3600 to 4199 will receive 1 strike
-     ☆  Anyone below 3600 will receive 2 strikes
-     ☆  Anyone below 3000 will receive 3 strikes
-NOTE: See rule 7 for strikes informations
+  ☆ Contribute 600 Raid Tickets everyday! (Minimum of 450)
 """)
-            embed.set_footer(text="Salporin | Custom Command | ΣΔ Legends HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
+            embed.set_footer(text="Salporin | Custom Command | The Mighty Deathstar HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
             await client.send_message(message.channel, embed=embed)
             return
 
         
     if message.content.startswith('!abb'):
         if message.server.id =='331114285432307723':
-            embed=discord.Embed(title=">>>Common Abbreviations<<< - ΣΔ Legends HQ", color=discord.Colour(0x696969), description="""
+            embed=discord.Embed(title=">>>Common Abbreviations<<< - The Mighty Deathstar HQ", color=discord.Colour(0x696969), description="""
 RPS = Rock, Paper, Scissors
 BTW = By The Way
 BRB = Be Right Back
@@ -235,27 +225,10 @@ vc = voice chat
 ~AoE/AE = Area of Effect
 ~DD = Damage Dealer
 """)
-            embed.set_footer(text="Salporin | Custom Command | ΣΔ Legends HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
-            await client.send_message(message.channel, embed=embed)
-            return
-        
-        
-    if message.content.startswith('!guild-application'):
-        if message.server.id =='331114285432307723':
-            embed=discord.Embed(title="Guild Application - ΣΔ Legends HQ", color=discord.Colour(0x696969), description="""
-Please post the following information into <#337593205501591552>
-
-Game Name | Player Level | # of 7/6/5 Stars | # of Gear 11 | # of Gear 10 | Ally Code | TimeZone or Country
-Example: SanHolo|80|15/7/20|2|12|123-456-789 | EST
-
-Or, just post your https://swgoh.gg/ link and TimeZone.
-""")
-            embed.set_footer(text="Salporin | Custom Command | ΣΔ Legends HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
+            embed.set_footer(text="Salporin | Custom Command | The Mighty Deathstar HQ",icon_url="https://images-ext-1.discordapp.net/external/wlm0NEVOnO_kjRA2ma9dN4Wmr4eU5Lxltu1A2PrjXeA/https/discordapp.com/api/guilds/331114285432307723/icons/3edbcee918d765c17a0011cab694d5f4.jpg?width=100&height=100")
             await client.send_message(message.channel, embed=embed)
             return
 
-    
-    
     if message.content.startswith('!request'):
         sugserver = message.server.name
         sugchannel = message.channel
