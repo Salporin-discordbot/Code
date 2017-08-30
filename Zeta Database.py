@@ -225,7 +225,7 @@ Overall: 22.5/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8         
 Arena: 7.5 - W/ Rebel teams     
-Raids: 5.5 - This zetanot gonna help much anyway! 
+Raids: 5.5 - This zeta not gonna help much anyway! 
 
 Overall: 21/30
         """)
@@ -304,7 +304,7 @@ Overall: 29.25/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9.5          
 Arena: 8 - W/ Resistance team        
-Raids: 9 - AAT Raids 
+Raids: 9 - AAT Raids (Help to deal tons of damage)
 
 Overall: 26.5/30
         """)
@@ -364,7 +364,7 @@ Overall: 16/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9          
 Arena: 7 - W/ Nightsister team       
-Raids: 8 - Rancor Raids 
+Raids: 8 - Rancor Raids (With full Nightsisters team) 
 
 Overall: 24/30
         """)
@@ -383,7 +383,7 @@ Overall: 24/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9.25          
 Arena: 7.75 - W/ High-Damage teams      
-Raids: 6 - None  
+Raids: 6 - This zeta is not isn't gonna help anything... 
 
 Overall: 23/30
         """)
@@ -401,7 +401,7 @@ Overall: 23/30
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
-Arena: 9 - W/ Jedi teams        
+Arena: 9 - W/ Jedi teams or any teams (Counter against teams that deal a lot of Critical Hits)       
 Raids: 7 - AAT Raids
 
 Overall: 24/30
@@ -515,8 +515,8 @@ Overall: 21.5/30
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 6          
-Arena: 5       
-Raids: 3 
+Arena: 5 - W/ Any teams      
+Raids: 3 - Nope, this zeta isn't gonna help anything
 Overall: 14/30
         """)
         embed.add_field(name="Priority", value="Extremely Low")
@@ -559,7 +559,7 @@ Raids: 8.5 - AAT Raids
 Overall: 21.5/30
         """)
         embed.add_field(name="Priority", value="Low")
-        embed.add_field(name="Editors Note", value="Decent zeta. He will be gaining a lot of Turn Meter when his allies got damaged.")
+        embed.add_field(name="Editors Note", value="Decent zeta. He will be gaining Turn Meter when his allies got damaged.")
         
         
         await bot.send_message(message.channel, embed=embed)
@@ -592,7 +592,7 @@ Overall: 27/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9          
 Arena: 9.25 - W/ Sith teams        
-Raids: 8.5 - Rancor Raids 
+Raids: 8.5 - Rancor Raids  
 
 Overall: 26.75/30
         """)
@@ -668,7 +668,7 @@ Galactic War: 8
 Arena: 9 - W/ Imperial Troopers or Empire teams      
 Raids: 6 - None 
 
-Overall: /30
+Overall: 23/30
         """)
         embed.add_field(name="Priority", value="Medium")
         embed.add_field(name="Editors Note", value="Amazing zeta. This have several synergies mostly between Krennic and Deathtrooper!")
@@ -686,7 +686,7 @@ Galactic War: 7.75
 Arena: 9 - W/ Empire teams      
 Raids: 6 - None 
 
-Overall: /30
+Overall: 22.75/30
         """)
         embed.add_field(name="Priority", value="Medium")
         embed.add_field(name="Editors Note", value="Incredible zeta. This works very well with Empire or Thrawn teams!")
