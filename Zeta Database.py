@@ -148,7 +148,7 @@ Overall: 15.5/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7          
 Arena: 9.5  - W/ Rogue One or CLS teams     
-Raids: 6 - Jyn is very good at the rancor raid, but this zeta doesn't add much up to that. 
+Raids: 6 - Jyn is very good at the Pit (rancor) raid, but this zeta doesn't add much up to that. 
 
 Overall: 22.5/30
         """)
@@ -184,14 +184,14 @@ Overall: 18/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_k2so.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
-Galactic War: 6         
+Galactic War: 5 - Reasonable         
 Arena: 4 - He's good W/ Rogue One teams, but this zeta doesn't make a real difference.      
 Raids: 2 - K2 can do a little damage, but hey this zeta is just worthless for raids.  
 
-Overall: 12/30
+Overall: 11/30
         """)
         embed.add_field(name="Priority", value="Low")
-        embed.add_field(name="Editors Note", value="Not too bad zeta. But only gain %1 Max Protection so this zeta is highly discouraged!")
+        embed.add_field(name="Editors Note", value="Not too bad zeta. But K2 only gains %1 Max Protection so this zeta is highly discouraged!")
         
         
         await bot.send_message(message.channel, embed=embed)
@@ -204,14 +204,14 @@ Overall: 12/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_luminara.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
-Galactic War: 8         
-Arena: 7.25 - W/ Jedi teams      
-Raids: 7 - AAT Raids  
+Galactic War: 7         
+Arena: 7.25 - W/ Fulcrum Ahsoka Tano and GK      
+Raids: 3 - Not much use discovered YET.  
 
 Overall: 22.5/30
         """)
-        embed.add_field(name="Priority", value="Low")
-        embed.add_field(name="Editors Note", value="Decent zeta. Gain HoT if they gain a buff they didn't have.")
+        embed.add_field(name="Priority", value="Medium")
+        embed.add_field(name="Editors Note", value="Decent zeta. Look: https://www.youtube.com/watch?v=qp42_VYBpws")
         
         await bot.send_message(message.channel, embed=embed)
 
@@ -223,14 +223,14 @@ Overall: 22.5/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_pao.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
-Galactic War: 8         
-Arena: 7.5 - W/ Rebel teams     
-Raids: 5.5 - This zeta not gonna help much anyway! 
+Galactic War: 5         
+Arena: 2 - :face_palm:    
+Raids: 3 - Pao is epic in hAAT P1. But this zeta isn't going to help much. 
 
-Overall: 21/30
+Overall: 10/30
         """)
         embed.add_field(name="Priority", value="Low")
-        embed.add_field(name="Editors Note", value="A non-perference zeta. Not really needed unless you want to reduce his cooldowns repeatedly.")
+        embed.add_field(name="Editors Note", value="Not. Good.")
         
         await bot.send_message(message.channel, embed=embed)
         
