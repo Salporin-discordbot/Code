@@ -647,7 +647,7 @@ Overall: 21.5/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8.5           
 Arena: 8 - W/ Sith teams       
-Raids: 8 - Rancor Raids
+Raids: 8 - Rancor Raids (Nerfed, but if you have TM Removal, you might do this)
 
 Overall: 24.5/30
         """)
@@ -796,7 +796,7 @@ Raids: 5 - None
 Overall: 20.5/30
         """)
         embed.add_field(name="Priority", value="Medium")
-        embed.add_field(name="Editors Note", value="Good zeta. This can only shine when paired with Imperial Troopers!")
+        embed.add_field(name="Editors Note", value="Good zeta. This can only shine when you paired Veers with Imperial Troopers!")
 
         await bot.send_message(message.channel, embed=embed)
         
@@ -943,8 +943,8 @@ Raids: 6 - None
 
 Overall: 22/30
         """)
-        embed.add_field(name="Priority", value="Medium")
-        embed.add_field(name="Editors Note", value="Insane zeta. This will you taking down your enemies! Counter-attacks will make Han even more deadly because he can double-attacks everytime!")
+        embed.add_field(name="Priority", value="High")
+        embed.add_field(name="Editors Note", value="Insane zeta. This will you taking down your enemies way faster than before! Counter-attacks will make Han even more deadly because he can double-attacks everytime!")
     
         await bot.send_message(message.channel, embed=embed)
                             
@@ -1107,7 +1107,7 @@ Overall: 20/30
         embed.add_field(name="Special Ability - Survivor - <:specialaayla:329908683767021568>", value="Deal Physical damage to target enemy and recover Health equal to 65% of the damage dealt.")
         embed.add_field(name="Leader Ability - Jedi Valor - <:leaderaayla:329908683448254464>", value="Jedi allies gain 40% Tenacity and recover 10% of their Max Health when they ward off an effect.")
         embed.add_field(name="Unique Ability - Superior Riposte - <:uniqueaayla:329908683385339914>", value="Aayla has +10% Critical Chance, 65% Counter Chance and +50% Counter Damage. In addition, she Stuns her target for 1 turn whenever she critically hits.")
-        embed.add_field(name="Usage", value="She is amazing in a team led by Ima-Gun, her self heal is pretty epic and she stuns like a b*tch.")
+        embed.add_field(name="Usage", value="She is amazing in a team led by Ima-Gun, her self heal is pretty epic and she stuns like a GOD.")
         embed.add_field(name="Ahnald Ranking", value="**Master**")
 
         await bot.send_message(message.channel, embed=embed)
