@@ -241,16 +241,15 @@ Overall: 10/30
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_quigon.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
-        embed.add_field(name="Usage", value="With +30 speed when he is leading a Jedi team, plus his Jedi allies will be able to dodge the first hit of the battle and whenever an ally or enemy is defeated. He is one of the current meta in the game! TIPS: DO NOT use a big damage attack when the enemies are having Foresight!")
          embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
-Galactic War: 9.5           
-Arena: 9 - W/ Jedi teams       
-Raids: 9.75 - Both  
+Galactic War: 9           
+Arena: 9.75 - W/ Jedi, and if possible double zeta R2D2.       
+Raids: 6 - can do some damage in P1 hAAT, but sink teams and counter teams are still more effective.  
 
-Overall: 28.25/30
+Overall: 25.75/30
         """)
         embed.add_field(name="Priority", value="Medium")
-        embed.add_field(name="Editors Note", value="Great zeta. Jedi allies will gain Foresight frequently with this zeta!")
+        embed.add_field(name="Editors Note", value="Great zeta. If you have been using jedi for the whole time whole you played this game, and you want to keep using them, then this is a very good choice for you.")
         
         await bot.send_message(message.channel, embed=embed)
 
@@ -263,13 +262,13 @@ Overall: 28.25/30
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9.75          
-Arena: 10 - W/ Any teams       
-Raids: 9.5 - AAT Raids  
+Arena: 10 - W/ LS teams, especially Jedi and Rebel teams.       
+Raids: 9.5 - hAAT P4  
 
 Overall: 29.25/30
         """)
         embed.add_field(name="Priority", value="High")
-        embed.add_field(name="Editors Note", value="Highly recommended zeta. LS characters cleanse themselves whenever they score a Critical Hit")
+        embed.add_field(name="Editors Note", value="Highly recommended zeta. LS characters cleanse themselves whenever they score a Critical Hit, very helpful in arena.")
         
         await bot.send_message(message.channel, embed=embed)
 
@@ -282,8 +281,8 @@ Overall: 29.25/30
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9.75           
-Arena: 10 - W/ Any teams       
-Raids: 9.5 - AAT Raids
+Arena: 10 - W/ LS teams, especially Jedi and Rebel teams.   
+Raids: 9.5 - hAAT P4, he keeps the buffs up
 
 Overall: 29.25/30
         """)
