@@ -301,14 +301,14 @@ Overall: 29.25/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_reyjakku.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
-Galactic War: 9.5          
-Arena: 8 - W/ Resistance team        
-Raids: 9 - AAT Raids (Help to deal tons of damage)
+Galactic War: 7 - not a big improvement, but still handy.          
+Arena: 8 - W/ Resistance         
+Raids: 9 - hAAT P4 W/ Resistance (Inflicts Daze on B2 droids so they can't gain 100% TM.)
 
-Overall: 26.5/30
+Overall: 24/30
         """)
         embed.add_field(name="Priority", value="Medium")
-        embed.add_field(name="Editors Note", value="Decent zeta. She will gain Offense and inflict Daze when she uses her Special abilities, BUT disabled if she got inflicted with any debuffs!")
+        embed.add_field(name="Editors Note", value="Good zeta if you run Resistance in hAAT, with this zeta they're able to solo P4 hAAT all day.")
          
     
         await bot.send_message(message.channel, embed=embed)
@@ -321,9 +321,9 @@ Overall: 26.5/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_savageopress.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
-Galactic War: 8           
-Arena: 9.25 - W/ Sith teams      
-Raids: 10 - AAT Raids (Able to Solo P3 HAAT)
+Galactic War: 7           
+Arena: 9.25 - W/ zMaul and zNihilus teams      
+Raids: 8 - AAT Raids (Able to Solo P1 HAAT)
 
 Overall: 27.25/30
         """)
