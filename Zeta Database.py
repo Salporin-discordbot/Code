@@ -244,7 +244,7 @@ Overall: 10/30
          embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9           
 Arena: 9.75 - W/ Jedi, and if possible double zeta R2D2.       
-Raids: 6 - can do some damage in P1 hAAT, but sink teams and counter teams are still more effective.  
+Raids: 6 - Can do some damage in P1 hAAT, but Sink teams and Counter teams are still more effective.  
 
 Overall: 25.75/30
         """)
@@ -323,7 +323,7 @@ Overall: 24/30
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7           
 Arena: 9.25 - W/ zMaul and zNihilus teams      
-Raids: 8 - AAT Raids (Able to Solo P1 HAAT)
+Raids: 8 - AAT Raids (Able to Solo P3 HAAT)
 
 Overall: 27.25/30
         """)
@@ -1106,7 +1106,16 @@ Overall: 20/30
         embed.add_field(name="Special Ability - Survivor - <:specialaayla:329908683767021568>", value="Deal Physical damage to target enemy and recover Health equal to 65% of the damage dealt.")
         embed.add_field(name="Leader Ability - Jedi Valor - <:leaderaayla:329908683448254464>", value="Jedi allies gain 40% Tenacity and recover 10% of their Max Health when they ward off an effect.")
         embed.add_field(name="Unique Ability - Superior Riposte - <:uniqueaayla:329908683385339914>", value="Aayla has +10% Critical Chance, 65% Counter Chance and +50% Counter Damage. In addition, she Stuns her target for 1 turn whenever she critically hits.")
-        embed.add_field(name="Usage", value="She is amazing in a team led by Ima-Gun, her self heal is pretty epic and she stuns like a GOD.")
+        embed.add_field(name="Character Ratings", value="""
+Galactic War:
+Arena:
+Raids:
+
+Overall:
+----------------------------------------
+Farmability: <emoji>
+        """)
+        embed.add_field(name="Usage", value="Awesome character. Able to deal a lot of damage, Stuns, self-healing, and counter-attacks.")
         embed.add_field(name="Ahnald Ranking", value="**Master**")
 
         await bot.send_message(message.channel, embed=embed)
@@ -1123,7 +1132,16 @@ Overall: 20/30
         embed.add_field(name="Special Ability - It's a Trap! - <:ackbarspecial1:331746459194097674>", value="Dispel all negative status effects from all allies. Each ally recovers 9% of their Max Health for each effect dispelled this way. Admiral Ackbar has a 25% chance to gain 40% Turn Meter.")
         embed.add_field(name="Special Ability - Tactical Genius - <:ackbarspecial2:331746458934181891>", value="Ackbar grants each ally the Tactical Genius effect. The first ally to use a Special ability while they have this effect gains 100% Turn Meter and recovers 30% of their Max Health. Tactical Genius ends whenever any ally triggers this effect or at the end of Ackbar's next turn.")
         embed.add_field(name="Leader Ability - Rebel Coordination - <:ackbarleader:331746459177320450>", value="Rebel allies have +25 Speed and +10% Tenacity. In addition, whenever an ally uses an ability that isn't an attack, they call a Rebel ally to Assist.")
-        embed.add_field(name="Usage", value="He is good as rebel leader, however I would recommend Wedge lead instead of him in Arena and in Galactic War. His **It's a trap!** ability is also nice for P1 Tank raid, becouse it heals pretty much when there are lots of debuffs. Also, the **Tactical Genius** effect can be super effective (See that pokemon reference) if it is used on the right way. (like Lando double down hitting twice) I also really needed him to complete The Emperor's Desmise (The event to unlock Palpatine). He is pretty handy in PVE too.")
+        embed.add_field(name="Character Ratings", value="""
+Galactic War:
+Arena:
+Raids:
+
+Overall:
+----------------------------------------
+Farmability: <emoji>
+        """)                    
+        embed.add_field(name="Usage", value="Fanscinating Rebel Leader. Awesome (Not really) for AAT P1 for cleansing debuffs, for Emperor's Demise event, and ")
         embed.add_field(name="Ahnald Ranking", value="**Knight**")
 
 
@@ -1817,6 +1835,8 @@ Overall: 20/30
         embed.add_field(name="Unique Ability - Push Through - <:EzraUnique:344014817885159425>", value="Ezra gains 10% Offense at the end of his turns. The effect can stack up to 40%. This bonus is reset if Ezra is defeated.")
         embed.add_field(name="Usage", value="Ezra is a fabulous character for all players at any levels, he is farmable at Cantina Battle 2-B or Fleet Store. His **Rushing Strike** has a chance to attack again, and doubled if Ezra isn't debuffed. **Flourish** can deal a insane amount of damage, and dispel all buffs from that enemy. **Watch and Learn** give both of them a bonus effect based on the Assist role. Ezra is great for Palpatine, Thrawn and Yoda event.")
         embed.add_field(name="Ahnald Ranking", value="**Master**")
+                        
+        await bot.send_message(message.channel, embed=embed) 
                           
     if message.content.startswith("!Finn"):
         embed=discord.Embed(title="Finn",color=discord.Colour(i will do this), description="Resistance tank that keeps the pressure up with a balance between offense and defense")
@@ -1832,8 +1852,97 @@ Overall: 20/30
         embed.add_field(name="Usage", value="Finn is a amazing character for advanced players. His basic can deal insane damage if that enemy hasn't been struc by it. His 1st special dispel all debuffs from all allies, gains Defense Up and Advantage, Finn and Poe gain HoT for 2 turns. **Take Down** can Stun and Expose enemies. His leader ability is MANDATORY if you want to run a Resistance team in Phase 2 or 4 of AAT Raids, whenever an enemy takes damage from Expose, all Resistance allies gain 35% TM and reduce their cooldowns by 1, that's insane - if they keep hitting Expose, they can use their special abilities over and over again.")                   
         embed.add_field(name="Ahnald Ranking", value="**Knight**")                  
                           
-                          
-                          
+        await bot.send_message(message.channel, embed=embed)
+                        
+    if message.content.startswith("!FOO"):
+        embed=discord.Embed(title="First Order Officer",color=discord.Colour(i will do this), description="First Order support that grants Advantage and can manipulate both ally and enemy Turn Meters")
+        embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+        embed.set_thumbnail(url=?)
+        embed.set_image(url="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwixzo_JgobWAhVDTbwKHX5IDjsQjRwIBw&url=http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FFirst_Order_officer&psig=AFQjCNEOpaPlGk1dMnieV2QYIEwcaYmscQ&ust=1504425113485234")
+        embed.add_field(name="<:zeta:327437604465278977>", value="No Zeta Ability")
+        embed.add_field(name="Stats", value="`Power: 16948` `Speed: 145` `Health: 15,283` (<:gearicong111:330366020365713408>, without mods)")
+        embed.add_field(name="Basic Ability - Capitalize - <:FOOBasic:345948391261339648>", value="Deal Physical damage to target enemy. This attack has +20% Critical Damage. If any ally has Advantage, this attack is a guaranteed Critical Hit.")
+        embed.add_field(name="Special Ability - Marching Orders - <:FOOSpecial:345948418507538432>", value="Target other ally gains 100% Turn Meter and Advantage for 2 turns. If that ally is First Order, they also gain Offense Up for 3 turns. Dispel all debuffs from First Order Officer and target ally and grant them both Tenacity Up for 2 turns.")
+        embed.add_field(name="Special Ability - Pinning Shot - <:FOOSpecial1:345948460270485515>", value="Physical damage to target enemy and remove 50% Turn Meter. If any Turn Meter is removed this way, each ally gains 15% Turn Meter. All First Order allies have their Cooldowns reduced by 1.")
+        embed.add_field(name="Usage", value="Great character for beginners. Can maniplute both allies & enemies' TM!")    
+        embed.add_field(name="Ahnald Ranking", value="**Knight**") 
+                        
+        await bot.send_message(message.channel, embed=embed)  
+                        
+    if message.content.startswith("!FOST"):
+        embed=discord.Embed(title="First Order Stormtrooper",color=discord.Colour(i will do this), description="First Order tank that uses Advantage to disrupt enemies")
+        embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+        embed.set_thumbnail(url=?)
+        embed.set_image(url="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj9jM-og4bWAhXKnZQKHV-cC_wQjRwIBw&url=http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FStormtrooper_(First_Order)&psig=AFQjCNFtFUZ79JM_OOaTk64ftp_oGufLMQ&ust=1504425351018998")
+        embed.add_field(name="<:zeta:327437604465278977>", value="1 Zeta Ability: Return Fire")
+        embed.add_field(name="Stats", value="`Power: 19144` `Speed: 116` `Health: 26,400` (<:gearicong111:330366020365713408>, without mods)")
+        embed.add_field(name="Basic Ability - Hindering Shot - <:FOSTBasic:345948544928055296>", value="Deal Physical damage to target enemy with a 50% chance to inflict Speed Down for 1 turn. This chance is increased to 100% on a Critical Hit. If First Order Stormtrooper has Advantage, Dispel all buffs from the target.")
+        embed.add_field(name="Special Ability - The Order Relentless - <:FOSTSpecial:345948580801937408>", value="All allies gain 25% Turn Meter and Defense Up for 4 turns. First Order Stormtrooper Dispels all debuffs from himself and then gains Advantage and Taunt for 2 turns.")
+        embed.add_field(name="Unique Ability - Return Fire - <:FOSTUnique:345948604839755777>", value="First Order Stormtrooper has +65% Counter Chance. Whenever First Order Stormtrooper uses any Ability he has a 50% chance to call a random ally to Assist, dealing 50% damage unless they are First Order. Then, if it was a First Order ally, grant them Advantage for 2 turns.")                  
+        embed.add_field(name="Usage", value="Awesome FO Tank. Can take a lot of hits and counter-attacks!")
+        embed.add_field(name="Ahnald Ranking", value="**Knight**") 
+                        
+        await bot.send_message(message.channel, embed=embed)   
+                        
+    if message.content.startswith("!FOTP"):
+        embed=discord.Embed(title="First Order Tie Pilot",color=discord.Colour(i will do this), description="First Order attacker that can deal extreme damage in a single turn with Advantage")
+        embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+        embed.set_thumbnail(url=?)
+        embed.set_image(url="https://www.sideshowtoy.com/wp-content/uploads/2015/09/star-wars-first-order-tie-pilot-sixth-scale-hot-toys-feature-902555.jpg")
+        embed.add_field(name="<:zeta:327437604465278977>", value="1 Zeta Ability: Keen Eye")
+        embed.add_field(name="Stats", value="`Power: 19144` `Speed: 128` `Health: 15,043` (<:gearicong111:330366020365713408>, without mods)")
+        embed.add_field(name="Basic Ability - Double Tap - <:FOTPBasic:345948484865622019>", value="Deal Physical damage to target enemy with a 50% chance to attack again. This chance is doubled if First Order TIE Pilot has Advantage. If the second attack scores a Critical Hit, gain Advantage for 2 turns.")
+        embed.add_field(name="Special Ability - Gun Down - <:FOTPSpecial:345948514242789396>", value="Deal Physical damage to target enemy and inflict Offense Down for 2 turns on a Critical Hit. If First Order TIE Pilot has Advantage, also inflict Buff Immunity and Health Down for 2 turns.")
+        embed.add_field(name="Unique Ability - Keen Eye - <:FOTPUnique:345948533888909312>", value="First Order TIE Pilot has +30% Critical Chance and +30% Critical Damage, and gains Advantage for 3 turns whenever an enemy falls below full Health. First Order TIE Pilot has a 70% chance to gain Foresight for 2 turns whenever he loses Advantage 
+        embed.add_field(name="Usage", value="Incredible First Order character. Can multi-attack when using Basic and deal insane damage!")
+        embed.add_field(name="Ahnald Ranking", value="**Master**") 
+                        
+        await bot.send_message(message.channel, embed=embed)    
+                        
+                        
+    if message.content.startswith("!Gamorrean-Guard"): 
+        embed=discord.Embed(title="**Gamorrean Guard**",color=discord.Colour(i will do this), description="Aggressive Tank that Taunts and Counters with multiple Damage Over Time effects.")
+        embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+        embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_gamorreanguard.png")
+        embed.set_image(url="https://vignette2.wikia.nocookie.net/starwars/images/2/23/Gamorrean_Guard_with_Axe.jpg/revision/latest?cb=20060813142536")
+        embed.add_field(name="<:zeta:327437604465278977>", value="No Zeta ability")
+        embed.add_field(name="Stats", value="`Power: 16948` `Speed: 118` `Health: 23,826`(<:gearicong111:330366020365713408>, without mods)")
+        embed.add_field(name="Basic Ability - Hack and Slash - <:PigBasic:344458181868781568>", value="Deal Physical damage to target enemy and inflict two Damage Over Time effects for 3 turns.")
+        embed.add_field(name="Special Ability - Muscle In - <:PigSpecial:344458210012299274>", value="Gamorrean Guard Taunts and gains Retribution for 2 turns. The Gamorrean Guard gains Protection equal to 20% of his Max Health while Taunting.")
+        embed.add_field(name="Special Ability - Punch Through - <:PigSpecial1:344458229641773056>", value="Deal Physical damage to target enemy and Expose them for 2 turns.")
+        embed.add_field(name="Usage", value="Quite useless character, but decent tank. Gamorrean Guard can apply tons of DoT, Taunt, and Expose enemies.")                 
+        embed.add_field(name="Ahnald Ranking", value="**Youngling**") 
+        
+        await bot.send_message(message.channel, embed=embed)                 
+                        
+    if message.content.startswith("!Gar-Saxon"): 
+        embed=discord.Embed(title="**Gar Saxon**",color=discord.Colour(i will do this), description="Leader who grants Empire allies Counter Chance and Assists them when they Counter Attack")
+        embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+        embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_gar_saxon.png")
+        embed.set_image(url="http://assets.nydailynews.com/polopoly_fs/1.2976083.1487426569!/img/httpImage/image.jpg_gen/derivatives/article_750/rebels19f-4-web.jpg")
+        embed.add_field(name="<:zeta:327437604465278977>", value="1 Zeta ability: Mandalorian Retaliation")
+        embed.add_field(name="Stats", value="`Power: 8758` `Speed: 127` `Health: 21,955` (<:gearicong111:330366020365713408>, without mods)")
+        embed.add_field(name="Basic Ability - On The Hunt -<:SaxonBasic:344458253624934422>", value="Deal Physical damage to target enemy with a 70% chance to inflict Speed Down for 2 turns. If the target already had Speed Down, reduce Gar Saxon's cooldowns by 1.")
+        embed.add_field(name="Special Ability - Calculated Ambush - <:SaxonSpecial:344458276777361428>", value="Deal Physical damage to all enemies, dealing double damage to enemies with less than 50% Turn Meter. Enemies that had at least 50% Turn Meter lose 30% Turn Meter.")
+        embed.add_field(name="Leader Ability - Mandalorian Retaliation - <:SaxonLead:344458294737502209>", value="Empire allies gain 50% Counter Chance and 40% Defense. Whenever an Empire ally uses a Basic attack, they recover 5% Health")
+        embed.add_field(name="Unique Ability - Viceroy's Vengeance - <:SaxonUnique:344458331634663425>", value="Whenever another ally attacks during an enemy turn, Gar Saxon has a 100% chance to Assist.")
+        embed.add_field(name="Usage", value="Awesome Empire character. Can apply Speed Down, deal AoE damage and give Empire allies Counter Chance!")
+        embed.add_field(name="Ahnald Ranking", value="**Knight**")                   
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                           
                           
                           
