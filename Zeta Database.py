@@ -1872,7 +1872,7 @@ Farmability: <emoji>
     if message.content.startswith("!FOST"):
         embed=discord.Embed(title="First Order Stormtrooper",color=discord.Colour(i will do this), description="First Order tank that uses Advantage to disrupt enemies")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
-        embed.set_thumbnail(url=?)
+        embed.set_thumbnail(url="https://www.sideshowtoy.com/wp-content/uploads/2015/09/star-wars-first-order-squad-leader-stormtrooper-sixth-scale-hot-toys-feature-902539.jpg")
         embed.set_image(url="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj9jM-og4bWAhXKnZQKHV-cC_wQjRwIBw&url=http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FStormtrooper_(First_Order)&psig=AFQjCNFtFUZ79JM_OOaTk64ftp_oGufLMQ&ust=1504425351018998")
         embed.add_field(name="<:zeta:327437604465278977>", value="1 Zeta Ability: Return Fire")
         embed.add_field(name="Stats", value="`Power: 19144` `Speed: 116` `Health: 26,400` (<:gearicong111:330366020365713408>, without mods)")
@@ -1887,7 +1887,7 @@ Farmability: <emoji>
     if message.content.startswith("!FOTP"):
         embed=discord.Embed(title="First Order Tie Pilot",color=discord.Colour(i will do this), description="First Order attacker that can deal extreme damage in a single turn with Advantage")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
-        embed.set_thumbnail(url=?)
+        embed.set_thumbnail(url="https://www.sideshowtoy.com/wp-content/uploads/2015/09/star-wars-first-order-tie-pilot-sixth-scale-hot-toys-feature-902555.jpg")
         embed.set_image(url="https://www.sideshowtoy.com/wp-content/uploads/2015/09/star-wars-first-order-tie-pilot-sixth-scale-hot-toys-feature-902555.jpg")
         embed.add_field(name="<:zeta:327437604465278977>", value="1 Zeta Ability: Keen Eye")
         embed.add_field(name="Stats", value="`Power: 19144` `Speed: 128` `Health: 15,043` (<:gearicong111:330366020365713408>, without mods)")
