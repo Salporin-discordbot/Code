@@ -68,7 +68,6 @@ async def on_message(message):
     
     if message.content.startswith('!funfact'):
         funfact = random.choice(listfunfacts)
-        meme = random.choice(listmemes)
         embed=discord.Embed(color = discord.Colour(0x9CD3E8), description="{}".format(funfact))
         player = message.author
         embed.set_author(name='A random fun fact for ' + str(player.name), icon_url=player.avatar_url)
