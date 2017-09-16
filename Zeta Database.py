@@ -1916,17 +1916,17 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)                 
                         
     if message.content.startswith("!Gar-Saxon"): 
-        embed=discord.Embed(title="**Gar Saxon**",color=discord.Colour(i will do this), description="Leader who grants Empire allies Counter Chance and Assists them when they Counter Attack")
+        embed=discord.Embed(title="**Gar Saxon**", color=discord.Colour(0x710D13), description="Leader who grants Empire allies Counter Chance and Assists them when they Counter Attack")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_gar_saxon.png")
         embed.set_image(url="http://assets.nydailynews.com/polopoly_fs/1.2976083.1487426569!/img/httpImage/image.jpg_gen/derivatives/article_750/rebels19f-4-web.jpg")
-        embed.add_field(name="<:zeta:327437604465278977>", value="1 Zeta ability: Mandalorian Retaliation")
+        embed.add_field(name="<:zeta:327437604465278977>", value="1 Zeta ability: Mandalorian Retaliation (!zGar-Saxon)")
         embed.add_field(name="Stats", value="`Power: 8758` `Speed: 127` `Health: 21,955` (<:gearicong111:330366020365713408>, without mods)")
         embed.add_field(name="Basic Ability - On The Hunt -<:SaxonBasic:344458253624934422>", value="Deal Physical damage to target enemy with a 70% chance to inflict Speed Down for 2 turns. If the target already had Speed Down, reduce Gar Saxon's cooldowns by 1.")
         embed.add_field(name="Special Ability - Calculated Ambush - <:SaxonSpecial:344458276777361428>", value="Deal Physical damage to all enemies, dealing double damage to enemies with less than 50% Turn Meter. Enemies that had at least 50% Turn Meter lose 30% Turn Meter.")
         embed.add_field(name="Leader Ability - Mandalorian Retaliation - <:SaxonLead:344458294737502209>", value="Empire allies gain 50% Counter Chance and 40% Defense. Whenever an Empire ally uses a Basic attack, they recover 5% Health")
         embed.add_field(name="Unique Ability - Viceroy's Vengeance - <:SaxonUnique:344458331634663425>", value="Whenever another ally attacks during an enemy turn, Gar Saxon has a 100% chance to Assist.")
-        embed.add_field(name="Usage", value="Awesome Empire character. Can apply Speed Down, deal AoE damage and give Empire allies Counter Chance!")
+        embed.add_field(name="Usage", value="Awesome Empire character. His zeta works great with CLS or Ima-gun-di counter teams.")
         embed.add_field(name="Ahnald Ranking", value="**Knight**")                   
                         
                         
