@@ -1901,7 +1901,7 @@ Farmability: <emoji>
                         
                         
     if message.content.startswith("!Gamorrean-Guard"): 
-        embed=discord.Embed(title="**Gamorrean Guard**",color=discord.Colour(i will do this), description="Aggressive Tank that Taunts and Counters with multiple Damage Over Time effects.")
+        embed=discord.Embed(title="**Gamorrean Guard**",color=discord.Colour(0x8C7A3D), description="Aggressive Tank that Taunts and Counters with multiple Damage Over Time effects.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_gamorreanguard.png")
         embed.set_image(url="https://vignette2.wikia.nocookie.net/starwars/images/2/23/Gamorrean_Guard_with_Axe.jpg/revision/latest?cb=20060813142536")
@@ -1924,7 +1924,7 @@ Farmability: <emoji>
         embed.add_field(name="Stats", value="`Power: 8758` `Speed: 127` `Health: 21,955` (<:gearicong111:330366020365713408>, without mods)")
         embed.add_field(name="Basic Ability - On The Hunt -<:SaxonBasic:344458253624934422>", value="Deal Physical damage to target enemy with a 70% chance to inflict Speed Down for 2 turns. If the target already had Speed Down, reduce Gar Saxon's cooldowns by 1.")
         embed.add_field(name="Special Ability - Calculated Ambush - <:SaxonSpecial:344458276777361428>", value="Deal Physical damage to all enemies, dealing double damage to enemies with less than 50% Turn Meter. Enemies that had at least 50% Turn Meter lose 30% Turn Meter.")
-        embed.add_field(name="Leader Ability - Mandalorian Retaliation - <:SaxonLead:344458294737502209>", value="Empire allies gain 50% Counter Chance and 40% Defense. Whenever an Empire ally uses a Basic attack, they recover 5% Health")
+        embed.add_field(name="Leader Ability - Mandalorian Retaliation - <:SaxonLead:344458294737502209>", value="Empire allies gain 50% Counter Chance and 40% Defense. Whenever an Empire ally uses a Basic attack, they recover 5% Health.")
         embed.add_field(name="Unique Ability - Viceroy's Vengeance - <:SaxonUnique:344458331634663425>", value="Whenever another ally attacks during an enemy turn, Gar Saxon has a 100% chance to Assist.")
         embed.add_field(name="Usage", value="Awesome Empire character. His zeta works great with CLS or Ima-gun-di counter teams.")
         embed.add_field(name="Ahnald Ranking", value="**Knight**")                   
