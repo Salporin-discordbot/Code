@@ -355,7 +355,7 @@ Overall: 16/30
 
 
     if message.content.startswith('!zAsajj'): 
-        embed=discord.Embed(title="Zeta Asajj Ventress --- Nightsister Swiftness",color = NIGHTSISTER_COLOR, description="Nightsister allies gain 28 Speed, gain 50% Turn Meter when they fall below 100% Health, and have a 50% chance to remove 20% Turn Meter when they damage an enemy. This Turn Meter removal can't be Resisted.")
+        embed=discord.Embed(title="Zeta Asajj Ventress --- Nightsister Swiftness",color = NIGHTSISTER_COLOR, description="Nightsister allies have +30 Speed, +30% Offense, gain 50% Turn Meter when they fall below 100% Health, and have a 50% chance to remove 20% Turn Meter when they damage an enemy. This Turn Meter removal can't be Resisted.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_speed.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ventress.png")
@@ -374,7 +374,7 @@ Overall: 24/30
 
 
     if message.content.startswith('!zAsajj'): 
-        embed=discord.Embed(title="Zeta Asajj Ventress --- Rampage",color = NIGHTSISTER_COLOR, description="Whenever any ally or enemy is defeated, Asajj Ventress gains Offense Up and Critical Chance Up for two actions and gains 50% Turn Meter. Asajj Ventress gains 15 Speed for each enemy with no buffs.")
+        embed=discord.Embed(title="Zeta Asajj Ventress --- Rampage",color = NIGHTSISTER_COLOR, description="When any ally or enemy is defeated, Asajj gains 35% Turn Meter, and, gains 15% Offense, 15% Critical Chance, and 5% Max Health (stacking) until the end of the encounter. Asajj has +15 Speed for each enemy with no buffs.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_attack_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ventress.png")
@@ -801,7 +801,7 @@ Overall: 20.5/30
         
         
     if message.content.startswith("!zThrawn"): 
-        embed=discord.Embed(title="Zeta Grand Admiral Thrawn --- Legendary Strategist",color=discord.Colour(0x8EBEF4), description="Empire allies have +15% Max Protection, +25% Offense, and gain 20% Turn Meter whenever they Resist a detrimental effect or suffer a debuff. Whenever an Empire ally gains or loses a status effect, they recover 2% Protection. Empire allies gain a new Special ability, Maneuver: Dispel all debuffs on this character and gain 50% Turn Meter (Cooldown 3).")
+        embed=discord.Embed(title="Zeta Grand Admiral Thrawn --- Legendary Strategist",color = EMPIRE_COLOR, description="Empire allies have +15% Max Protection, +25% Offense, and gain 20% Turn Meter whenever they Resist a detrimental effect or suffer a debuff. Whenever an Empire ally gains or loses a status effect, they recover 2% Protection. Empire allies gain a new Special ability, Maneuver: Dispel all debuffs on this character and gain 50% Turn Meter (Cooldown 3).")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_empire.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_thrawn.png")
@@ -822,7 +822,7 @@ Overall: 28/30
         
         
     if message.content.startswith("!zThrawn"): 
-        embed=discord.Embed(title="Zeta Grand Admiral Thrawn --- Ebb and Flow",color=discord.Colour(0x8EBEF4), description="Thrawn has +100% Counter Chance, +100% Tenacity, and -50% Speed while any enemies are Fractured. Whenever another Empire ally uses a Special ability while Thrawn is active, that ally gains 15% Turn Meter and, if any enemies are Fractured, Thrawn and Fractured enemies lose 15% Turn Meter.")
+        embed=discord.Embed(title="Zeta Grand Admiral Thrawn --- Ebb and Flow",color = EMPIRE_COLOR, description="Thrawn has +100% Counter Chance, +100% Tenacity, and -50% Speed while any enemies are Fractured. Whenever another Empire ally uses a Special ability while Thrawn is active, that ally gains 15% Turn Meter and, if any enemies are Fractured, Thrawn and Fractured enemies lose 15% Turn Meter.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_extraturn.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_thrawn.png")
@@ -858,7 +858,7 @@ Overall: 18/30
         await bot.send_message(message.channel, embed=embed) 
                         
     if message.content.startswith('!zCLS'):   
-        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- Rebel Maneuvers",color = discord.Colour(0xCD853F), description=" Rebel allies have +50% Counter Chance, +50% Defense, and +15% Offense. Whenever an enemy Resists a detrimental effect, Rebel allies gain 5% Turn Meter.
+        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- Rebel Maneuvers",color = REBEL_COLOR, description=" Rebel allies have +50% Counter Chance, +50% Defense, and +15% Offense. Whenever an enemy Resists a detrimental effect, Rebel allies gain 5% Turn Meter.
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_rebel.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png")
@@ -876,7 +876,7 @@ Overall: 30/30
         await bot.send_message(message.channel, embed=embed)
                             
      if message.content.startswith('!zCLS'):   
-        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- Learn Control",color = discord.Colour(0xCD853F), description=" While Luke doesn't have **Call to Action**, he has +50% Counter Chance, +50% Critical Avoidance, +50% Defense, +100% Tenacity, and gains 10% Turn Meter whenever another Rebel ally takes damage.
+        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- Learn Control",color = REBEL_COLOR, description=" While Luke doesn't have **Call to Action**, he has +50% Counter Chance, +50% Critical Avoidance, +50% Defense, +100% Tenacity, and gains 10% Turn Meter whenever another Rebel ally takes damage.
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_counterattack.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png")
@@ -894,7 +894,7 @@ Overall: 30/30
         await bot.send_message(message.channel, embed=embed)
     
     if message.content.startswith('!zCLS'):   
-        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- It Binds All Things",color = discord.Colour(0xCD853F), description=" Luke has +40% Potency. Whenever Luke Resists a detrimental effect he recovers 5% Health and 5% Protection. Whenever Luke inflicts a debuff he gains 10% Turn Meter and other allies gain half that amount.")
+        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- It Binds All Things",color = REBEL_COLOR, description=" Luke has +40% Potency. Whenever Luke Resists a detrimental effect he recovers 5% Health and 5% Protection. Whenever Luke inflicts a debuff he gains 10% Turn Meter and other allies gain half that amount.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_extraturn.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png")
@@ -930,7 +930,7 @@ Overall: 21/30
         await bot.send_message(message.channel, embed=embed)                    
     
     if message.content.startswith('!zHan-Solo'):   
-        embed=discord.Embed(title="Zeta Han Solo (Raid) --- Shoots First",color = discord.Colour(0xCD853F), description="Han has +35% Counter Chance and +20% Critical Chance. The first time each turn Han uses his Basic attack, he attacks again dealing 50% less damage. Han takes a bonus turn at the start of each encounter. During this turn Han ignores Taunts and he can only use his Basic ability, but it will Stun the target for 1 turn and can't be Resisted.")
+        embed=discord.Embed(title="Zeta Han Solo (Raid) --- Shoots First",color = REBEL_COLOR, description="Han has +35% Counter Chance and +20% Critical Chance. The first time each turn Han uses his Basic attack, he attacks again dealing 50% less damage. Han takes a bonus turn at the start of each encounter. During this turn Han ignores Taunts and he can only use his Basic ability, but it will Stun the target for 1 turn and can't be Resisted.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_speed.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_han.png")
@@ -948,7 +948,7 @@ Overall: 22/30
         await bot.send_message(message.channel, embed=embed)
                             
     if message.content.startswith('!zLuke'):   
-        embed=discord.Embed(title="Zeta Luke Skywalker (Farmboy) --- A New Hope",color = discord.Colour(0xCD853F), description="All allies gain 50% Tenacity. Whenever an ally Resists a detrimental effect they gain Advantage for 2 turns.")
+        embed=discord.Embed(title="Zeta Luke Skywalker (Farmboy) --- A New Hope",color = REBEL_COLOR, description="All allies gain 50% Tenacity. Whenever an ally Resists a detrimental effect they gain Advantage for 2 turns.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_removeharmful.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_luke_ep4.png")
@@ -966,7 +966,7 @@ Overall: 19/30
         await bot.send_message(message.channel, embed=embed)  
                             
     if message.content.startswith('!zLuke'):   
-        embed=discord.Embed(title="Zeta Luke Skywalker (Farmboy) --- Draw a Bead",color = discord.Colour(0xCD853F), description="Luke has 25% Critical Chance. At the start of each of his turns, Luke gains 10% Critical Damage (stacking) until the end of the encounter.")
+        embed=discord.Embed(title="Zeta Luke Skywalker (Farmboy) --- Draw a Bead",color = REBEL_COLOR, description="Luke has 25% Critical Chance. At the start of each of his turns, Luke gains 10% Critical Damage (stacking) until the end of the encounter.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_crit_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_luke_ep4.png")
@@ -984,7 +984,7 @@ Overall: 19/30
         await bot.send_message(message.channel, embed=embed)
                             
     if message.content.startswith('!zSTH'):   
-        embed=discord.Embed(title="Zeta Stormtrooper Han --- Bluff",color = discord.Colour(0xCD853F), description="Han has a 25% chance to remove 30% Turn Meter from each enemy at the start of each of his turns. In addition, Han recovers 5% Protection and has a 25% chance to remove 15% Turn Meter from each enemy when he is damaged.")
+        embed=discord.Embed(title="Zeta Stormtrooper Han --- Bluff",color = REBEL_COLOR, description="Han has a 25% chance to remove 30% Turn Meter from each enemy at the start of each of his turns. In addition, Han recovers 5% Protection and has a 25% chance to remove 15% Turn Meter from each enemy when he is damaged.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_stun_immute.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_trooperstorm_han.png")
@@ -1002,7 +1002,7 @@ Overall: 22.25/30
         await bot.send_message(message.channel, embed=embed) 
                             
     if message.content.startswith('!zLeia'):   
-        embed=discord.Embed(title="Zeta Princess Leia --- Against the Odds",color = discord.Colour(0xCD853F), description="Whenever Leia attacks, she has a 55% chance to grant all allies Critical Chance Up for 2 turns, and recovers 5% Health and 5% Protection.")
+        embed=discord.Embed(title="Zeta Princess Leia --- Against the Odds",color = REBEL_COLOR, description="Whenever Leia attacks, she has a 55% chance to grant all allies Critical Chance Up for 2 turns, and recovers 5% Health and 5% Protection.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_heal_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_leia_princess.png")
@@ -1020,7 +1020,7 @@ Overall: 21/30
         await bot.send_message(message.channel, embed=embed)
                             
      if message.content.startswith('!zOld-Ben'):   
-        embed=discord.Embed(title="Zeta Obi-Wan Kenobi (Old Ben) --- Devoted Protector",color = discord.Colour(0xCD853F), description=" Old Ben gains Taunt for 2 turns. When this Taunt expires, Old Ben gains Taunt for 1 turn. All allies gain Defense Up for 2 turns.")
+        embed=discord.Embed(title="Zeta Obi-Wan Kenobi (Old Ben) --- Devoted Protector",color = REBEL_COLOR, description=" Old Ben gains Taunt for 2 turns. When this Taunt expires, Old Ben gains Taunt for 1 turn. All allies gain Defense Up for 2 turns.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_obiwankenobioldhermit_event01.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_obiwanep4.png")
@@ -1038,7 +1038,7 @@ Overall: 21.25/30
         await bot.send_message(message.channel, embed=embed)                  
                             
      if message.content.startswith('!zOld-Ben'):   
-        embed=discord.Embed(title="Zeta Obi-Wan Kenobi (Old Ben) --- If You Strike Me Down",color = discord.Colour(0xCD853F), description="Whenever another Jedi or Rebel ally takes damage, Old Ben gains 5% Turn Meter. The first time Old Ben is defeated, all allies gain Offense Up and Speed Up for 2 turns, recover 50% Health and 50% Protection, and gain 25% Turn Meter.")
+        embed=discord.Embed(title="Zeta Obi-Wan Kenobi (Old Ben) --- If You Strike Me Down",color = REBEL_COLOR, description="Whenever another Jedi or Rebel ally takes damage, Old Ben gains 5% Turn Meter. The first time Old Ben is defeated, all allies gain Offense Up and Speed Up for 2 turns, recover 50% Health and 50% Protection, and gain 25% Turn Meter.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_removeharmful.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_obiwanep4.png")
@@ -1090,13 +1090,32 @@ Overall: 20/30
         embed.add_field(name="Editors Note", value="'Incredible zeta. Ewok allies recover Health & Protection whenever Wicket scores a Critical Hit!")
     
         await bot.send_message(message.channel, embed=embed)             
-                                           
+      
+     if message.content.startswith('!zDaka'):   
+         embed=discord.Embed(title="Zeta Old Daka --- Served Again",color = NIGHTSISTER_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_heal_buff.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_daka.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="When another ally is defeated, Old Daka gains 50% Turn Meter and the cooldown of Chant of Resurrection is reduced by 1. When another ally is Revived while Old Daka is active, the Revived ally gains 20% Turn Meter and gains Offense Up and Defense Up for 2 turns.")
+         embed.add_field(name="**AFTER ZETA**", value="When another ally is defeated, Old Daka gains 50% Turn Meter and the cooldown of Chant of Resurrection is reduced by 1. When another ally is Revived while Old Daka is active, the Revived ally gains 20% Turn Meter and gains Offense Up and Defense Up for 2 turns, and Old Daka gains +10% Max Health (stacking) until the end of the encounter.")
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: 20/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?")
+    
+        await bot.send_message(message.channel, embed=embed)                              
                                                     
                             
 #beginning of characters database
 
     if message.content.startswith("!Aayla-Secura"): 
-        embed=discord.Embed(title="**Aayla Secura**",color=discord.Colour(0x5693B8), description="Versatile attacker with high survivability through Dodge, Hitpoints, and self healing.")
+        embed=discord.Embed(title="**Aayla Secura**",color=discord.Colour(0000ff), description="Versatile attacker with high survivability through Dodge, Hitpoints, and self healing.")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_aaylasecura.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://vignette1.wikia.nocookie.net/starwars/images/f/f9/Aayla.jpg/revision/latest?cb=20120815094201")
@@ -1122,7 +1141,7 @@ Farmability: <emoji>
 
         
     if message.content.startswith("!Admiral-Ackbar"): 
-        embed=discord.Embed(title="**Admiral Ackbar**",color=discord.Colour(0xB98D6D), description="Rebel Support that can Dispel debuffs and grant allies extra turns. <:Ackbaricon:331668407072063488>")
+        embed=discord.Embed(title="**Admiral Ackbar**",color=discord.Colour(0000ff), description="Rebel Support that can Dispel debuffs and grant allies extra turns. <:Ackbaricon:331668407072063488>")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_ackbaradmiral.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="http://img11.deviantart.net/f5fa/i/2010/065/8/e/admiral_ackbar_by_quibly.png")
@@ -1149,7 +1168,7 @@ Farmability: <emoji>
         
         
     if message.content.startswith("!Ahsoka-Tano"): 
-        embed=discord.Embed(title="**Ahsoka Tano**",color=discord.Colour(0xB98D6D), description="Versatile Attacker with healing and superior stats as long as she can avoid suffering Critical Hits")
+        embed=discord.Embed(title="**Ahsoka Tano**",color=discord.Colour0000ff), description="Versatile Attacker with healing and superior stats as long as she can avoid suffering Critical Hits")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_ahsoka.png")
         embed.set_image(url="https://www.wired.com/images_blogs/underwire/2010/11/ahsoka_660.jpg")
@@ -1167,7 +1186,7 @@ Farmability: <emoji>
 
 
     if message.content.startswith("!Fulcrum-Ahsoka-Tano"): 
-        embed=discord.Embed(title="**Ahsoka Tano (Fulcrum)**",color=discord.Colour(0xB98D6D), description="Enduring Rebel Attacker who shrugs off debuffs and consumes buffs to deal extra damage.")
+        embed=discord.Embed(title="**Ahsoka Tano (Fulcrum)**",color=discord.Colour(0000ff), description="Enduring Rebel Attacker who shrugs off debuffs and consumes buffs to deal extra damage.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_ahsokaadult.png")
         embed.set_image(url="http://vignette4.wikia.nocookie.net/starwarsrebels/images/e/ee/Ahsoka_rebels_1.png/revision/latest?cb=20150303094719")
@@ -1185,7 +1204,7 @@ Farmability: <emoji>
 
 
     if message.content.startswith("!Asajj-Ventress"): 
-        embed=discord.Embed(title="**Asajj Ventress**",color=11484517, description="Nightsister controller with self healing who generates attack power on enemy death.")
+        embed=discord.Embed(title="**Asajj Ventress**",color=discord.Colour(ff0000), description="Nightsister controller with self healing who generates attack power on enemy death.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_ventress.png")
         embed.set_image(url="https://lumiere-a.akamaihd.net/v1/images/Asajj-Ventress_d5ca9413.jpeg?region=67%2C0%2C1067%2C600&width=768")
@@ -1205,7 +1224,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)
         
     if message.content.startswith("!B2"): 
-        embed=discord.Embed(title="**B2 Super Battle Droid**",color=discord.Colour(0x6D6F6E), description="Droid Tank that relentlessly punishes enemies that evade attacks or damage allies")
+        embed=discord.Embed(title="**B2 Super Battle Droid**",color=discord.Colour(ff0000), description="Droid Tank that relentlessly punishes enemies that evade attacks or damage allies")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_b2.png")
         embed.set_image(url="https://vignette3.wikia.nocookie.net/starwars/images/c/c5/Battle_droids_on_Geonosis.jpg/revision/latest?cb=20091202200543")
@@ -1221,7 +1240,7 @@ Farmability: <emoji>
         
         
     if message.content.startswith("!Barriss-Offee"): 
-        embed=discord.Embed(title="**Barriss Offee**",color=discord.Colour(0x1F1A20), description="Jedi Healer that can balance party and Dispel allied Jedi frequently")
+        embed=discord.Embed(title="**Barriss Offee**",color=discord.Colour(0000ff), description="Jedi Healer that can balance party and Dispel allied Jedi frequently")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_barriss_light.png")
         embed.set_image(url="https://vignette3.wikia.nocookie.net/starwars/images/3/37/Barrisprofile2.jpg/revision/latest?cb=20070728014608")
@@ -1238,7 +1257,7 @@ Farmability: <emoji>
         
         
     if message.content.startswith("!Bistan"): 
-        embed=discord.Embed(title="**Bistan**",color=discord.Colour(0x675440), description="Wild Rebel Attacker who gains Frenzy, debuffs enemies, and removes Turn Meter")
+        embed=discord.Embed(title="**Bistan**",color=discord.Colour(0000ff), description="Wild Rebel Attacker who gains Frenzy, debuffs enemies, and removes Turn Meter")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_bistan.png")
         embed.set_image(url="https://vignette1.wikia.nocookie.net/starwars/images/6/68/Bistan-SW_Card_Trader.png/revision/latest?cb=20161103055247")
@@ -1255,7 +1274,7 @@ Farmability: <emoji>
         
         
     if message.content.startswith("!Bodhi-Rook"): 
-        embed=discord.Embed(title="**Bodhi Rook**",color=discord.Colour(0x675440), description="Clever Rebel Support who spots enemy units for his allies")
+        embed=discord.Embed(title="**Bodhi Rook**",color=discord.Colour(0000ff), description="Clever Rebel Support who spots enemy units for his allies")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_bodhi.png")
         embed.set_image(url="https://vignette1.wikia.nocookie.net/starwars/images/d/d0/Bodhi_Rook_Fathead.png/revision/latest?cb=20161108051512")
@@ -1271,7 +1290,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
 
     if message.content.startswith("!Boba-Fett"): 
-        embed=discord.Embed(title="Boba Fett",color=discord.Colour(0x636B5E), description="Ruthless Bounty Hunter Attacker who ignores Taunts, Ability Blocks and self-revives")
+        embed=discord.Embed(title="Boba Fett",color=discord.Colour(ff0000), description="Ruthless Bounty Hunter Attacker who ignores Taunts, Ability Blocks and self-revives")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_bobafett.png")
         embed.set_image(url="http://posterposse.com/wp-content/uploads/2014/12/wallpaper-1967961.jpg")
@@ -1290,7 +1309,7 @@ Farmability: <emoji>
     
          
     if message.content.startswith("!Cad-Bane"): 
-        embed=discord.Embed(title="**Cad Bane**",color=discord.Colour(0x352E3B), description="High damage attacker with a powerful stun and bonuses against Jedi characters ")
+        embed=discord.Embed(title="**Cad Bane**",color=discord.Colour(ff0000), description="High damage attacker with a powerful stun and bonuses against Jedi characters ")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_cadbane.png")
         embed.set_image(url="http://overmental.com/wp-content/uploads/2015/07/4433746-8523675652-cad-b-790x556.jpg")
@@ -1308,7 +1327,7 @@ Farmability: <emoji>
         
         
     if message.content.startswith("!Cody"): 
-        embed=discord.Embed(title="**CC-2224 Cody**",color=discord.Colour(0xE0A233), description="Clone Attacker that Stuns and call tons of Assists")
+        embed=discord.Embed(title="**CC-2224 Cody**",color=discord.Colour(0000ff), description="Clone Attacker that Stuns and call tons of Assists")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_trooperclone_cody.png")
         embed.set_image(url="https://vignette1.wikia.nocookie.net/starwars/images/4/44/End_Days.jpg/revision/latest?cb=20111028234105")
@@ -1327,7 +1346,7 @@ Farmability: <emoji>
 
 
     if message.content.startswith("!Cassian-Andor"): 
-        embed=discord.Embed(title="**Cassian Andor**",color=discord.Colour(0x304551), description="Rebel Support who buffs allies at the start of battle and debuffs enemies during the battle.")
+        embed=discord.Embed(title="**Cassian Andor**",color=discord.Colour(0000ff), description="Rebel Support who buffs allies at the start of battle and debuffs enemies during the battle.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_cassian.png")
         embed.set_image(url="http://screenrant3.imgix.net/wp-content/uploads/2017/01/Diego-Luna-as-Captain-Cassian-Andor-in-Rogue-One-A-Star-Wars-Story.jpg?auto=format&cs=tinysrgb&q=20&w=1000&h=500&fit=crop&dpr=1.5")
@@ -1344,7 +1363,7 @@ Farmability: <emoji>
         
         
     if message.content.startswith("!Captain-Phasma"): 
-        embed=discord.Embed(title="**Captain Phasma**",color=discord.Colour(0xE3E9E8), description="High-damage First Order support that can grant allies many extra attacks.")
+        embed=discord.Embed(title="**Captain Phasma**",color=discord.Colour(ff0000), description="High-damage First Order support that can grant allies many extra attacks.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_phasma.png")
         embed.set_image(url="http://vignette2.wikia.nocookie.net/movie-villains/images/f/f3/Star-wars-captain-phasma-figurine-0.jpg/revision/latest?cb=20160811084922")
@@ -1362,7 +1381,7 @@ Farmability: <emoji>
    
 
     if message.content.startswith("!Chirrut-Imwe"): 
-        embed=discord.Embed(title="**Chirrut Îmwe**",color=discord.Colour(0x4C0B07), description="Balanced Rebel Attacker who dispels debuffs, heal allies, and grants Tenacity Up")
+        embed=discord.Embed(title="**Chirrut Îmwe**",color=discord.Colour(0000ff), description="Balanced Rebel Attacker who dispels debuffs, heal allies, and grants Tenacity Up")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_chirrut.png")
         embed.set_image(url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6BRiE5HC1jZssxhT9EsAYKkaxduWatWnNfJ9DLr9_h79mkM9ulA")
@@ -1380,7 +1399,7 @@ Farmability: <emoji>
         
         
     if message.content.startswith("!Chief-Nebit"): 
-        embed=discord.Embed(title="**Chief Nebit**",color=discord.Colour(0x5B3A3D), description="Cunning Jawa Tank with Stealth synergies who can reduce cooldowns")
+        embed=discord.Embed(title="**Chief Nebit**",color=discord.Colour(0000ff), description="Cunning Jawa Tank with Stealth synergies who can reduce cooldowns")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_jawa_nebit.png")
         embed.set_image(url="https://vignette1.wikia.nocookie.net/starwars/images/0/04/NebitHS-ANH.png/revision/latest?cb=20130226042239")
@@ -1396,7 +1415,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
 
     if message.content.startswith("!Chopper"): 
-        embed=discord.Embed(title="**C1-10P 'Chopper'**",color=discord.Colour(0xD17A43), description="Surly Phoenix Support who Taunts and Dispels, and can recover Phoenix cooldowns.")
+        embed=discord.Embed(title="**C1-10P 'Chopper'**",color=discord.Colour(0000ff), description="Surly Phoenix Support who Taunts and Dispels, and can recover Phoenix cooldowns.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_chopper.png")
         embed.set_image(url="http://a.dilcdn.com/bl/wp-content/uploads/sites/6/img/news/chopper1.jpg")
@@ -1412,7 +1431,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
        
     if message.content.startswith("!Thrawn"): 
-        embed=discord.Embed(title="**Grand Admiral Thrawn**",color=discord.Colour(0x8EBEF4), description="Calculating Empire Leader who can halt enemies in their tracks, and grant Empire allies a new Special ability")
+        embed=discord.Embed(title="**Grand Admiral Thrawn**",color=discord.Colour(ff0000), description="Calculating Empire Leader who can halt enemies in their tracks, and grant Empire allies a new Special ability")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_thrawn.png")
         embed.set_image(url="https://s-media-cache-ak0.pinimg.com/736x/49/b7/c4/49b7c45708d56ea5919d55f4fcd5119d--grand-admiral-thrawn-empire.jpg")
@@ -1430,7 +1449,7 @@ Farmability: <emoji>
                         
     
     if message.content.startswith("!CS-P1"): 
-        embed=discord.Embed(title="**Clone Sergeant - Phase I**",color=discord.Colour(0x61813D), description="Clone Attacker with AoE damage and Turn Meter reduction")
+        embed=discord.Embed(title="**Clone Sergeant - Phase I**",color=discord.Colour(0000ff), description="Clone Attacker with AoE damage and Turn Meter reduction")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_trooperclonegreen.png")
         embed.set_image(url="http://www.mwctoys.com/images1/review_sstroop_large.jpg")
@@ -1446,7 +1465,7 @@ Farmability: <emoji>
         
         
     if message.content.startswith("!Chewbacca"): 
-        embed=discord.Embed(title="**Clone Wars - Chewbacca**",color=discord.Colour(0x48331B), description="Durable Tank with both Taunt and self-Healing")
+        embed=discord.Embed(title="**Clone Wars - Chewbacca**",color=discord.Colour(0000ff), description="Durable Tank with both Taunt and self-Healing")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_chewbacca.png")
         embed.set_image(url="https://2.bp.blogspot.com/-ZIL336AWVFM/VZZwSksccgI/AAAAAAAAfGU/0MvC6isBM_M/s320/peter%2Bmayhew%2Bchewbacca%2Bepisode%2B3.jpg")
@@ -1463,7 +1482,7 @@ Farmability: <emoji>
         
         
     if message.content.startswith("!CLS"): 
-        embed=discord.Embed(title="**Commander Luke Skywalker**",color=discord.Colour(0x5E70C4), description="Abilities (the complete command was too long, so we had to split it :joy:")
+        embed=discord.Embed(title="**Commander Luke Skywalker**",color=discord.Colour(0000ff), description="Abilities (the complete command was too long, so we had to split it :joy:")
         embed.set_thumbnail(url='https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png')
         embed.set_image(url="https://cnet4.cbsistatic.com/hub/i/r/2014/04/25/3ab1aceb-4bb6-42ca-95d5-5630fe3c5050/resize/570xauto/0efdbe9f91f476abc5626e3f85da3ef9/luke-bespin.jpg")       
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
@@ -1476,7 +1495,7 @@ Farmability: <emoji>
         
         await bot.send_message(message.channel, embed=embed) 
         
-        embed=discord.Embed(title="**Commander Luke Skywalker**",color=discord.Colour(0x5E70C4), description="Additional information.")
+        embed=discord.Embed(title="**Commander Luke Skywalker**",color=discord.Colour(0000ff), description="Additional information.")
         embed.set_thumbnail(url='https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png')
         embed.set_image(url="https://cnet4.cbsistatic.com/hub/i/r/2014/04/25/3ab1aceb-4bb6-42ca-95d5-5630fe3c5050/resize/570xauto/0efdbe9f91f476abc5626e3f85da3ef9/luke-bespin.jpg")
         embed.add_field(name="Stats", value="`Power: 24864` `Speed: 152` `Health: 18,010` (<:gearicong111:330366020365713408>, without mods)")
@@ -1490,7 +1509,7 @@ Farmability: <emoji>
        
         
     if message.content.startswith("!CUP"): 
-        embed=discord.Embed(title="**Coruscant Underworld Police**",color=discord.Colour(0x7B6E39), description="Support that shuts down enemies with Stuns and Offense Down")
+        embed=discord.Embed(title="**Coruscant Underworld Police**",color=discord.Colour(0000ff), description="Support that shuts down enemies with Stuns and Offense Down")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_coruscantpolice.png")
         embed.set_image(url="https://vignette2.wikia.nocookie.net/starwars/images/1/1c/CSF_underworld.png/revision/latest?cb=20130224221934 ")
@@ -1506,7 +1525,7 @@ Farmability: <emoji>
        
         
     if message.content.startswith("!Count-Dooku"): 
-        embed=discord.Embed(title="**Count Dooku**",color=discord.Colour(0x98062B), description="High-damage attacker with stun, bonus attacks, and incredible counter-attacking")
+        embed=discord.Embed(title="**Count Dooku**",color=discord.Colour(ff0000), description="High-damage attacker with stun, bonus attacks, and incredible counter-attacking")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_dooku.png")
         embed.set_image(url="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Count_Dooku.png/220px-Count_Dooku.png")
@@ -1522,7 +1541,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
                        
     if message.content.startswith("!Savage-Opress"):
-        embed=discord.Embed(title="Savage Opress",color=discord.Colour(0xE1C65D), description="Durable Attacker that crushes low-health units and becomes stronger when attacked")
+        embed=discord.Embed(title="Savage Opress",color=discord.Colour(ff0000), description="Durable Attacker that crushes low-health units and becomes stronger when attacked")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_savageopress.png")
         embed.set_image(url="https://vignette4.wikia.nocookie.net/starwars/images/1/1b/Cybernetic_savageopress.jpeg/revision/latest?cb=20150324112612")
@@ -1538,7 +1557,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
         
     if message.content.startswith("!Sith-Trooper"):
-        embed=discord.Embed(title="Sith Trooper",color=discord.Colour(0x822621), description="Sith Tank who Taunts and ignores enemy Protection")
+        embed=discord.Embed(title="Sith Trooper",color=discord.Colour(ff0000), description="Sith Tank who Taunts and ignores enemy Protection")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_sithtrooper.png")
         embed.set_image(url="http://media.moddb.com/images/downloads/1/64/63278/Soldat_Imprial.jpg")
@@ -1554,7 +1573,7 @@ Farmability: <emoji>
 
         
     if message.content.startswith("!Sith-Assassin"):
-        embed=discord.Embed(title="Sith Assassin",color=discord.Colour(0x822621), description="Elusive Sith Attacker with Stealth synergy")
+        embed=discord.Embed(title="Sith Assassin",color=discord.Colour(ff0000), description="Elusive Sith Attacker with Stealth synergy")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_sithassassin.png")
         embed.add_field(name="<:zeta:327437604465278977>", value="No Zeta Ability")
@@ -1568,7 +1587,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)
         
     if message.content.startswith("!Echo"): 
-        embed=discord.Embed(title="**CT-21-0408 'Echo'**",color=discord.Colour(0x62779D), description="Clone Support that automatically Assists allies and can Dispel all enemies")
+        embed=discord.Embed(title="**CT-21-0408 'Echo'**",color=discord.Colour(0000ff), description="Clone Support that automatically Assists allies and can Dispel all enemies")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_trooperclone_echo.png")
         embed.set_image(url="http://media.moddb.com/images/mods/1/13/12901/EchoARCarmor-TC.jpg")
@@ -1585,7 +1604,7 @@ Farmability: <emoji>
         
 
     if message.content.startswith("!Fives"): 
-        embed=discord.Embed(title="**CT-5555 'Fives'**",color=discord.Colour(0x62779D), description="Tank character with high Defense, enemy speed reduction and joint attack ability")
+        embed=discord.Embed(title="**CT-5555 'Fives'**",color=discord.Colour(0000ff), description="Tank character with high Defense, enemy speed reduction and joint attack ability")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_trooperclone_fives.png")
         embed.set_image(url="https://s-media-cache-ak0.pinimg.com/736x/bd/77/06/bd770684904c737613405932d038e3a6.jpg")
@@ -1601,7 +1620,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)
                         
     if message.content.startswith("!Chief-Chirpa"): 
-        embed=discord.Embed(title="**Chief Chirpa (Reworked)**",color=discord.Colour(0x62779D), description="Ewok Leader that greatly improves ally Basic abilities")
+        embed=discord.Embed(title="**Chief Chirpa (Reworked)**",color=discord.Colour(0000ff), description="Ewok Leader that greatly improves ally Basic abilities")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_ewok_chirpa.png")
         embed.set_image(url="https://vignette3.wikia.nocookie.net/starwars/images/a/a1/Chief_Chirpa.jpg/revision/latest?cb=20091202194819")
@@ -1617,7 +1636,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)
  
     if message.content.startswith("!Rex"): 
-        embed=discord.Embed(title="**CT-7567 'Rex'**",color=discord.Colour(0x62779D), description="Clone leader with a variety of abilities to support and protect Clone allies")
+        embed=discord.Embed(title="**CT-7567 'Rex'**",color=discord.Colour(0000ff), description="Clone leader with a variety of abilities to support and protect Clone allies")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_trooperclone_rex.png")
         embed.set_image(url="https://i0.wp.com/MynockManor.com/wp-content/uploads/2015/10/Rex-and-Ahsoka-Reunited.png")
@@ -1631,7 +1650,7 @@ Farmability: <emoji>
         embed.add_field(name="Ahnald Ranking", value="**Grand Master**")
                          
     if message.content.startswith("!Darth-Maul"): 
-        embed=discord.Embed(title="Darth Maul",color=discord.Colour(0x62779D), description="Deadly Attacker that gains power and extra turns as enemies are defeated")
+        embed=discord.Embed(title="Darth Maul",color=discord.Colour(ff0000), description="Deadly Attacker that gains power and extra turns as enemies are defeated")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_maul.png")
         embed.set_image(url="https://vignette4.wikia.nocookie.net/starwars/images/5/50/Darth_Maul_profile.png")
@@ -1648,7 +1667,7 @@ Farmability: <emoji>
                         
     
     if message.content.startswith("!Nihilus"): 
-        embed=discord.Embed(title="**Darth Nihilus**",color=discord.Colour(0x62779D), description="Sith Support that can instantly defeat enemies by draining cooldowns")
+        embed=discord.Embed(title="**Darth Nihilus**",color=discord.Colour(ff0000), description="Sith Support that can instantly defeat enemies by draining cooldowns")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_nihilus.png")
         embed.set_image(url="https://static.comicvine.com/uploads/scale_small/4/48954/1246062-darth_nihilus_by_neecoala.jpg")
@@ -1665,7 +1684,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)
                         
     if message.content.startswith("!Darth-Sidious"):
-        embed=discord.Embed(title="Darth Sidious",color=discord.Colour(0x62779D), description="Brutal Attacker effective against Healers and Jedi while boosting allied Criticals as a Leader")
+        embed=discord.Embed(title="Darth Sidious",color=discord.Colour(ff0000), description="Brutal Attacker effective against Healers and Jedi while boosting allied Criticals as a Leader")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url=https://swgoh.gg/static/img/assets/tex.charui_sidious.png)
         embed.set_image(url=https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-9qc5ag_07797936.jpeg?region=0%2C0%2C1200%2C675)
@@ -1681,7 +1700,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)
                         
     if message.content.startswith("!Darth-Vader"):
-        embed=discord.Embed(title="Darth Vader",color=discord.Colour(0x62779D), description="Fearsome Attacker that applies AoE Damage Over Time, and crushes debuffed targets for extra turns")
+        embed=discord.Embed(title="Darth Vader",color=discord.Colour(ff0000), description="Fearsome Attacker that applies AoE Damage Over Time, and crushes debuffed targets for extra turns")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url=https://swgoh.gg/static/img/assets/tex.charui_vader.png)
         embed.set_image(url=http://screenrant.com/wp-content/uploads/darth-vader-10-most-dangerous-star-wars-villains.jpeg)
@@ -1695,7 +1714,7 @@ Farmability: <emoji>
         embed.add_field(name="Ahnald Ranking", value="**Master**")
                         
     if message.content.startswith("!Dathcha"):
-        embed=discord.Embed(title="Dathcha",color=discord.Colour(eef442), description="Versatile Support able to Ability Block and Stealth, effective against Droids or with Jawas")
+        embed=discord.Embed(title="Dathcha",color=discord.Colour(ff0000), description="Versatile Support able to Ability Block and Stealth, effective against Droids or with Jawas")
         embed.set_footer(text="Salporin | SWGoH",   icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url=https://swgoh.gg/static/img/assets/tex.charui_jawa_dathcha.png)
         embed.set_image(url=https://vignette1.wikia.nocookie.net/starwars/images/8/88/Datcha.jpg/revision/latest?cb=20061102084342)
@@ -1711,10 +1730,10 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)                
     
     if message.content.startswith("!Death-Trooper"):
-        embed=discord.Embed(title="Death Trooper",color=discord.Colour(i will do this), description="Terrifying Empire Attacker who inflicts debilitating debuffs and prevents revives")
+        embed=discord.Embed(title="Death Trooper",color=discord.Colour(ff0000), description="Terrifying Empire Attacker who inflicts debilitating debuffs and prevents revives")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url=https://swgoh.gg/static/img/assets/tex.charui_trooperdeath.png)
-        embed.set_image(url=https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiJ0JiOverVAhVLObwKHRAqBMgQjRwIBw&url=http%3A%2F%2Fwww.starwars.com%2Fdatabank%2Fimperial-death-troopers&psig=AFQjCNHu6zgt1xdIlkuIVgA52CrSFug-xA&ust=1503478757575007")
+        embed.set_image(url="https://www.sideshowtoy.com/wp-content/uploads/2016/11/star-wars-rogue-one-death-trooper-sixth-scale-hot-toys-feature-902905.jpg")
         embed.add_field(name="<:zeta:327437604465278977>", value="1 Zeta Ability: Krennic's Guard")
         embed.add_field(name="Stats", value="`Power: 19101` `Speed: 124` `Health: 25,382` (<:gearicong111:330366020365713408>, without mods)")
         embed.add_field(name="Basic Ability - Track Down - <:DeathTrooperBasic:344012997716475904>", value="Deal Physical damage to target enemy with a 70% chance to inflict Daze for 3 turns. If the target was already Dazed, Stun them for 1 turn. If the target is a Rebel, attack again.")
@@ -1727,7 +1746,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)                
     
     if message.content.startswith("!Dengar"):
-        embed=discord.Embed(title="Dengar",color=discord.Colour(ff9900), description="Adaptable Scoundrel attacker that Stuns and inflicts Tenacity Down.")
+        embed=discord.Embed(title="Dengar",color=discord.Colour(ff0000), description="Adaptable Scoundrel attacker that Stuns and inflicts Tenacity Down.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url=https://swgoh.gg/static/img/assets/tex.charui_dengar.png)
         embed.set_image(url=https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiLz-CwxerVAhWKbrwKHa7vCwgQjRwIBw&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHmPIJvkoOI0&psig=AFQjCNHW0-Max1dOsC9Wf35YTCvCUPQhSg&ust=1503480996977991)
@@ -1743,7 +1762,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
                         
     if message.content.startswith("!Krennic"):
-        embed=discord.Embed(title="Director Krennic",color=discord.Colour(i will do this), description="Intimidating Empire Support who inflicts devastating debuffs and slows enemies")
+        embed=discord.Embed(title="Director Krennic",color=discord.Colour(ff0000), description="Intimidating Empire Support who inflicts devastating debuffs and slows enemies")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url=https://swgoh.gg/static/img/assets/tex.charui_krennic.png)
         embed.set_image(url=https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjQ3PzYx-rVAhWDUrwKHejbD_gQjRwIBw&url=http%3A%2F%2Fwww.inafarawaygalaxy.com%2F2016%2F05%2Fdirector-krennic-quotes-rogueone-starwars-benmendelsohn.html&psig=AFQjCNHx5J-9xfrESQkZ2OHRFguU_UtVvw&ust=1503481622657672)
@@ -1760,7 +1779,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)                
                         
     if message.content.startswith("!Eeth-Koth"):
-        embed=discord.Embed(title="Eeth Koth",color=discord.Colour(i will do this), description="Stunning Jedi Support extremely effective against Droids")
+        embed=discord.Embed(title="Eeth Koth",color=discord.Colour(0000ff), description="Stunning Jedi Support extremely effective against Droids")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url=?)
         embed.set_image(url=?)
@@ -1776,7 +1795,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
     
     if message.content.startswith("!Palpatine"): 
-        embed=discord.Embed(title="**Emperor Palpatine**",color=discord.Colour(i will do this), description="Overwhelming Sith Support who inflicts Shock and can Stun targets for multiple turns.")
+        embed=discord.Embed(title="**Emperor Palpatine**",color=discord.Colour(ff0000), description="Overwhelming Sith Support who inflicts Shock and can Stun targets for multiple turns.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="ihttps://swgoh.gg/static/img/assets/tex.charui_palpatineemperor.png")
         embed.set_image(url="http://screenrant.com/wp-content/uploads/2016/11/Emperor-Palpatine-meme-from-Star-Wars.jpg")
@@ -1793,7 +1812,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
     
     if message.content.startswith("!Ewok-Elder"):
-        embed=discord.Embed(title="Ewok Elder (Reworks)",color=discord.Colour(0099ff), description="Ewok Healer that specializes in Revives")
+        embed=discord.Embed(title="Ewok Elder (Reworks)",color=discord.Colour(0000ff), description="Ewok Healer that specializes in Revives")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_ewok_chief.png")
         embed.set_image(url=?)
@@ -1808,7 +1827,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
                         
     if message.content.startswith("!Ewok-Scout"):
-        embed=discord.Embed(title="Ewok Scout (Reworked)",color=discord.Colour(0099ff), description="Powerful single-target Attacker that becomes evasive with Ewok allies")
+        embed=discord.Embed(title="Ewok Scout (Reworked)",color=discord.Colour(0000ff), description="Powerful single-target Attacker that becomes evasive with Ewok allies")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_ewok_scout.png")
         embed.set_image(url=?)
@@ -1823,7 +1842,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
                         
     if message.content.startswith("!Ezra-Bridger"): 
-        embed=discord.Embed(title="**Ezra Bridger**",color=discord.Colour(i will do this), description="Versatile Phoenix Attacker that can perform a variety of effect based on the Roles of allies.")
+        embed=discord.Embed(title="**Ezra Bridger**",color=discord.Colour(0000ff), description="Versatile Phoenix Attacker that can perform a variety of effect based on the Roles of allies.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_ezra_s3.png")
         embed.set_image(url="http://pm1.narvii.com/6242/871e94adff28e5837b424bea2748794f5ee7e40c_hq.jpg")
@@ -1839,7 +1858,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed) 
                           
     if message.content.startswith("!Finn"):
-        embed=discord.Embed(title="Finn",color=discord.Colour(i will do this), description="Resistance tank that keeps the pressure up with a balance between offense and defense")
+        embed=discord.Embed(title="Finn",color=discord.Colour(0000ff), description="Resistance tank that keeps the pressure up with a balance between offense and defense")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_finnjakku.png")
         embed.set_image(url="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiaua7k_OzVAhUBxLwKHe_uA0AQjRwIBw&url=http%3A%2F%2Fwww.starwars.com%2Fnews%2F12-things-we-learned-about-rey-finn-and-poe-from-before-the-awakening&psig=AFQjCNFBOVGR_cucafUFoZEgU3ZmK4Dsnw&ust=1503564589764456")
@@ -1855,7 +1874,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)
                         
     if message.content.startswith("!FOO"):
-        embed=discord.Embed(title="First Order Officer",color=discord.Colour(i will do this), description="First Order support that grants Advantage and can manipulate both ally and enemy Turn Meters")
+        embed=discord.Embed(title="First Order Officer",color=discord.Colour(ff0000), description="First Order support that grants Advantage and can manipulate both ally and enemy Turn Meters")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url=?)
         embed.set_image(url="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwixzo_JgobWAhVDTbwKHX5IDjsQjRwIBw&url=http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FFirst_Order_officer&psig=AFQjCNEOpaPlGk1dMnieV2QYIEwcaYmscQ&ust=1504425113485234")
@@ -1870,7 +1889,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)  
                         
     if message.content.startswith("!FOST"):
-        embed=discord.Embed(title="First Order Stormtrooper",color=discord.Colour(i will do this), description="First Order tank that uses Advantage to disrupt enemies")
+        embed=discord.Embed(title="First Order Stormtrooper",color=discord.Colour(ff0000), description="First Order tank that uses Advantage to disrupt enemies")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://www.sideshowtoy.com/wp-content/uploads/2015/09/star-wars-first-order-squad-leader-stormtrooper-sixth-scale-hot-toys-feature-902539.jpg")
         embed.set_image(url="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj9jM-og4bWAhXKnZQKHV-cC_wQjRwIBw&url=http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FStormtrooper_(First_Order)&psig=AFQjCNFtFUZ79JM_OOaTk64ftp_oGufLMQ&ust=1504425351018998")
@@ -1885,7 +1904,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)   
                         
     if message.content.startswith("!FOTP"):
-        embed=discord.Embed(title="First Order Tie Pilot",color=discord.Colour(i will do this), description="First Order attacker that can deal extreme damage in a single turn with Advantage")
+        embed=discord.Embed(title="First Order Tie Pilot",color=discord.Colour(ff0000), description="First Order attacker that can deal extreme damage in a single turn with Advantage")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://www.sideshowtoy.com/wp-content/uploads/2015/09/star-wars-first-order-tie-pilot-sixth-scale-hot-toys-feature-902555.jpg")
         embed.set_image(url="https://www.sideshowtoy.com/wp-content/uploads/2015/09/star-wars-first-order-tie-pilot-sixth-scale-hot-toys-feature-902555.jpg")
@@ -1901,7 +1920,7 @@ Farmability: <emoji>
                         
                         
     if message.content.startswith("!Gamorrean-Guard"): 
-        embed=discord.Embed(title="**Gamorrean Guard**",color=discord.Colour(0x8C7A3D), description="Aggressive Tank that Taunts and Counters with multiple Damage Over Time effects.")
+        embed=discord.Embed(title="**Gamorrean Guard**",color=discord.Colour(ff0000), description="Aggressive Tank that Taunts and Counters with multiple Damage Over Time effects.")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_gamorreanguard.png")
         embed.set_image(url="https://vignette2.wikia.nocookie.net/starwars/images/2/23/Gamorrean_Guard_with_Axe.jpg/revision/latest?cb=20060813142536")
@@ -1916,7 +1935,7 @@ Farmability: <emoji>
         await bot.send_message(message.channel, embed=embed)                 
                         
     if message.content.startswith("!Gar-Saxon"): 
-        embed=discord.Embed(title="**Gar Saxon**", color=discord.Colour(0x710D13), description="Leader who grants Empire allies Counter Chance and Assists them when they Counter Attack")
+        embed=discord.Embed(title="**Gar Saxon**", color=discord.Colour(ff0000), description="Leader who grants Empire allies Counter Chance and Assists them when they Counter Attack")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.charui_gar_saxon.png")
         embed.set_image(url="http://assets.nydailynews.com/polopoly_fs/1.2976083.1487426569!/img/httpImage/image.jpg_gen/derivatives/article_750/rebels19f-4-web.jpg")
@@ -1926,8 +1945,10 @@ Farmability: <emoji>
         embed.add_field(name="Special Ability - Calculated Ambush - <:SaxonSpecial:344458276777361428>", value="Deal Physical damage to all enemies, dealing double damage to enemies with less than 50% Turn Meter. Enemies that had at least 50% Turn Meter lose 30% Turn Meter.")
         embed.add_field(name="Leader Ability - Mandalorian Retaliation - <:SaxonLead:344458294737502209>", value="Empire allies gain 50% Counter Chance and 40% Defense. Whenever an Empire ally uses a Basic attack, they recover 5% Health.")
         embed.add_field(name="Unique Ability - Viceroy's Vengeance - <:SaxonUnique:344458331634663425>", value="Whenever another ally attacks during an enemy turn, Gar Saxon has a 100% chance to Assist.")
-        embed.add_field(name="Usage", value="Awesome Empire character. His zeta works great with CLS or Ima-gun-di counter teams.")
-        embed.add_field(name="Ahnald Ranking", value="**Knight**")                   
+        embed.add_field(name="Usage", value="Awesome Empire character. His zeta works great with CLS or Ima-Gun-Di counter teams.")
+        embed.add_field(name="Ahnald Ranking", value="**Knight**")  
+        #HERE YOU GO, SPOCK! HOPE YOU ENJOY
+        #I'M SORRY IF I SCREWED UP SOMEWHERE
                         
                         
                         
