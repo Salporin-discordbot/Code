@@ -586,7 +586,7 @@ Overall: 19/30
 Whenever an ally attacks, they have a 20% chance to call a random ally to Assist. This chance is doubled if the attacking ally is First Order. If that ally had Advantage, they regain it for 2 turns.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
-Whenever an ally attacks, they have a 20% chance to call a random ally to Assist. This chance is tripled if the attacking ally is First Order. If that ally had Advantage, they regain it for 2 turns. First Order allies gain Advantage for 2 turns at the start of each encounter, can't be Critically Hit while they have Advantage, and gain 20% Potency.
+Whenever an ally attacks, they have a 20% chance to call a random ally to Assist [-15% Damage Penalty]. This chance is tripled if the attacking ally is First Order. If that ally had Advantage, they regain it for 2 turns. First Order allies gain Advantage for 2 turns at the start of each encounter, can't be Critically Hit while they have Advantage, and gain 20% Potency.
         """)                 
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9.5           
@@ -637,7 +637,7 @@ Overall: 25.75/30
 Clone allies gain 25% Critical Chance, and other allies gain half that amount. Cody gains 50% Defense for each living Clone ally and other Clone allies gain half that amount. 
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
-Clone allies gain 30% Critical Chance [+5%], and other allies gain half that amount. Cody gains 60% Defense [+10% Defense] for each living Clone ally and other Clone allies gain half that amount. Clone allies recover 5% of their Max Protection whenever they use a Basic ability.
+Clone allies gain 30% Critical Chance [+5% Crit Chance], and other allies gain half that amount. Cody gains 60% Defense [+10% Defense] for each living Clone ally and other Clone allies gain half that amount. Clone allies recover 5% of their Max Protection whenever they use a Basic ability.
         """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War:  6.5           
@@ -828,11 +828,17 @@ Overall: 21.5/30
 
 
     if message.content.startswith("!zVader"): 
-        embed=discord.Embed(title="Zeta Darth Vader --- Inspiring Through Fear",color = EMPIRE_COLOR, description="Empire and Sith allies gain 30% Offense and have a 50% chance to remove 20% Turn Meter when they damage an enemy. This Turn Meter removal can't be Resisted. While Darth Vader is alive, enemies immediately regain Damage Over Time for 2 turns whenever Damage Over Time expires on them.")
+        embed=discord.Embed(title="Zeta Darth Vader --- Inspiring Through Fear",color = EMPIRE_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_attack_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_vader.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Empire and Sith allies gain 30% Offense and have a 25% chance to remove 10% Turn Meter when they damage an enemy. This Turn Meter removal can't be Resisted. 
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Empire and Sith allies gain 30% Offense and have a 50% chance [+25% TM Reduction Chance] to remove 20% Turn Meter [+10% TM Reduction] when they damage an enemy. This Turn Meter removal can't be Resisted. While Darth Vader is alive, enemies immediately regain Damage Over Time for 2 turns whenever Damage Over Time expires on them.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8.5           
 Arena: 8 - W/ Sith teams       
@@ -847,11 +853,17 @@ Overall: 24.5/30
 
 
     if message.content.startswith("!zDeath-Trooper"): 
-        embed=discord.Embed(title="Zeta Death Trooper --- Krennic's Guard",color = EMPIRE_COLOR, description="Whenever Death Trooper scores a Critical Hit, he and Director Krennic recover 20% Health. Death Trooper has a 50% chance to gain 100% Turn Meter whenever Director Krennic takes damage. Director Krennic can't be Critically Hit while Death Trooper is alive. While Death Trooper is active, Imperial Trooper allies have +10% Health Steal.")
+        embed=discord.Embed(title="Zeta Death Trooper --- Krennic's Guard",color = EMPIRE_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_heal_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_trooperdeath.png")
-         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Whenever Death Trooper scores a Critical Hit, he and Director Krennic recover 15% Health. Death Trooper has a 50% chance to gain 50% Turn Meter whenever Director Krennic takes damage. While Death Trooper is active, Imperial Trooper allies have +10% Health Steal.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Whenever Death Trooper scores a Critical Hit, he and Director Krennic recover 20% Health [+5% Heal]. Death Trooper has a 50% chance to gain 100% Turn Meter [+50% TM Gain] whenever Director Krennic takes damage. Director Krennic can't be Critically Hit while Death Trooper is alive. While Death Trooper is active, Imperial Trooper allies have +10% Health Steal.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
 Arena: 9 - W/ Imperial Troopers or Empire teams      
@@ -865,11 +877,17 @@ Overall: 23/30
         await bot.send_message(message.channel, embed=embed)
 
     if message.content.startswith("!zKrennic"): 
-        embed=discord.Embed(title="Zeta Director Krennic --- Director of Advanced Weapons Research",color = EMPIRE_COLOR, description="Empire allies gain 25% Critical Chance and 25% Potency. Debuffed enemies who are Critically Hit during an Empire ally's turn suffer Ability Block for 1 turn. This effect can't be Resisted. Empire allies recover 10% Protection whenever they score a Critical Hit.")
+        embed=discord.Embed(title="Zeta Director Krennic --- Director of Advanced Weapons Research",color = EMPIRE_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_empire.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_krennic.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Empire allies gain 25% Critical Chance and 25% Potency. Debuffed enemies who are Critically Hit during an Empire ally's turn suffer Ability Block for 1 turn. This effect can't be Resisted. 
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Empire allies gain 25% Critical Chance and 25% Potency. Debuffed enemies who are Critically Hit during an Empire ally's turn suffer Ability Block for 1 turn. This effect can't be Resisted. Empire allies recover 10% Protection whenever they score a Critical Hit.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7.75           
 Arena: 9 - W/ Empire teams      
@@ -882,12 +900,18 @@ Overall: 22.75/30
                         
         await bot.send_message(message.channel, embed=embed)
 
-    if message.content.startswith("!zFinn"): 
-        embed=discord.Embed(title="Zeta Finn --- Balanced Tactics",color = RESISTANCE_COLOR, description="Resistance allies gain 30% Offense and 60% Defense, and other allies gain half that amount. Whenever a Resistance ally loses Foresight, they gain Advantage for 2 turns and whenever an enemy takes damage from Expose, reduce the cooldowns of all Resistance allies by 1 and grant them 35% Turn Meter.")
+    if message.content.startswith("!zFinn")
+        embed=discord.Embed(title="Zeta Finn --- Balanced Tactics",color = RESISTANCE_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_attack_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_finnjakku.png")
-         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Resistance allies gain 30% Offense and 60% Defense, and other allies gain half that amount. 
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Resistance allies gain 30% Offense and 60% Defense, and other allies gain half that amount. Whenever a Resistance ally loses Foresight, they gain Advantage for 2 turns and whenever an enemy takes damage from Expose, reduce the cooldowns of all Resistance allies by 1 and grant them 35% Turn Meter.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 10           
 Arena: 8 - W/ Resistance teams        
@@ -900,11 +924,17 @@ Overall: 28/30
         await bot.send_message(message.channel, embed=embed)
 
     if message.content.startswith("!zFAT"): 
-        embed=discord.Embed(title="Zeta Ahsoka Tano (Fulcrum) --- Whirlwind",color=discord.Colour(0xB6BBC1), description="Consume all buffs on Ahsoka and deal Physical damage to target enemy. This attack scores an additional hit for each type of buff consumed. The target can't Evade and has -50% Armor against this attack.")
+        embed=discord.Embed(title="Zeta Ahsoka Tano (Fulcrum) --- Whirlwind",color=discord.Colour(0xB6BBC1)")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_ahsoka_adult_special02.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ahsokaadult.png")
-         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+        embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Consume all buffs on Ahsoka and deal Physical damage to target enemy. This attack scores an additional hit for each type of buff consumed. 
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Consume all buffs on Ahsoka and deal Physical damage to target enemy. This attack scores an additional hit for each type of buff consumed. The target can't Evade and has -50% Armor against this attack. [Cooldown -1]
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
 Arena: 8 - W/ Rebel teams      
@@ -919,11 +949,17 @@ Overall: 24/30
 
     
     if message.content.startswith("!zFOST"): 
-        embed=discord.Embed(title="Zeta First Order Stormtrooper --- Return Fire",color = FIRST_ORDER_COLOR, description="First Order Stormtrooper has +65% Counter Chance. Whenever First Order Stormtrooper uses any Ability he has a 50% chance to call a random ally to Assist, dealing 50% damage unless they are First Order. Then, if it was a First Order ally, grant them Advantage for 2 turns.")
+        embed=discord.Embed(title="Zeta First Order Stormtrooper --- Return Fire",color = FIRST_ORDER_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_counterattack.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_firstordertrooper.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+First Order Stormtrooper has +65% Counter Chance.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+First Order Stormtrooper has +65% Counter Chance. Whenever First Order Stormtrooper uses any Ability he has a 50% chance to call a random ally to Assist, dealing 50% damage unless they are First Order. Then, if it was a First Order ally, grant them Advantage for 2 turns.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7           
 Arena: 8 - W/ First Order teams       
@@ -936,11 +972,17 @@ Overall: 21.5/30
         await bot.send_message(message.channel, embed=embed)
         
     if message.content.startswith("!zTarkin"): 
-        embed=discord.Embed(title="Zeta Grand Moff Tarkin --- Callous Conviction",color = EMPIRE_COLOR, description="Grand Moff Tarkin gains 100% Defense equal to his Potency Percentage and 20% Potency per debuffed enemy.")
+        embed=discord.Embed(title="Zeta Grand Moff Tarkin --- Callous Conviction",color = EMPIRE_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_empire.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_tarkinadmiral.png")
-         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Grand Moff Tarkin gains 100% Defense equal to his Potency Percentage.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Grand Moff Tarkin gains 100% Defense equal to his Potency Percentage and 20% Potency per debuffed enemy.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
 Arena: 7 - W/ Empire teams       
@@ -954,11 +996,17 @@ Overall: 20/30
         await bot.send_message(message.channel, embed=embed)
         
     if message.content.startswith("!zTarkin"): 
-        embed=discord.Embed(title="Zeta Grand Moff Tarkin --- Tighten the Grip",color = EMPIRE_COLOR, description="Empire allies gain 30 Speed. Inflict Defense Down and Expose for 2 turns on enemies that fall below 100% Health during Empire allies' turn. This effect can't be Resisted.")
+        embed=discord.Embed(title="Zeta Grand Moff Tarkin --- Tighten the Grip",color = EMPIRE_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_speed.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_tarkinadmiral.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Empire allies gain 28 Speed. Inflict Defense Down for 2 turns on enemies that fall below 100% Health during Empire allies' turn. This effect can't be Resisted.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Empire allies gain 30 Speed [+2 Speed]. Inflict Defense Down and Expose for 2 turns on enemies that fall below 100% Health during Empire allies' turn. This effect can't be Resisted.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7           
 Arena: 7  - W/ Empire teams     
@@ -977,6 +1025,12 @@ Overall: /30
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_veers.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+
+        """)                     
        embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7          
 Arena: 8.5 - W/ Imperial Troopers       
@@ -991,12 +1045,18 @@ Overall: 20.5/30
         
         
     if message.content.startswith("!zThrawn"): 
-        embed=discord.Embed(title="Zeta Grand Admiral Thrawn --- Legendary Strategist",color = EMPIRE_COLOR, description="Empire allies have +15% Max Protection, +25% Offense, and gain 20% Turn Meter whenever they Resist a detrimental effect or suffer a debuff. Whenever an Empire ally gains or loses a status effect, they recover 2% Protection. Empire allies gain a new Special ability, Maneuver: Dispel all debuffs on this character and gain 50% Turn Meter (Cooldown 3).")
+        embed=discord.Embed(title="Zeta Grand Admiral Thrawn --- Legendary Strategist",color = EMPIRE_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_empire.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_thrawn.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="Usage", value="Great ability to zeta! Recover 2% Protection whenever Empire allies lose or gain a status effect. They have bonus Max Protection, Offense, gain 20% on both Resist or suffer a debuff. You should zeta this if you want to keep your Empire allies healthy under this lead.")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Empire allies have +15% Max Protection, +25% Offense, and gain 20% Turn Meter whenever they Resist a detrimental effect or suffer a debuff. Empire allies gain a new Special ability, ***Maneuver***: Dispel all debuffs on this character and gain 50% Turn Meter (Cooldown 3).
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Empire allies have +15% Max Protection, +25% Offense, and gain 20% Turn Meter whenever they Resist a detrimental effect or suffer a debuff. Whenever an Empire ally gains or loses a status effect, they recover 2% Protection. Empire allies gain a new Special ability, Maneuver: Dispel all debuffs on this character and gain 50% Turn Meter (Cooldown 3).
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 10          
 Arena: 10        
@@ -1012,11 +1072,17 @@ Overall: 28/30
         
         
     if message.content.startswith("!zThrawn"): 
-        embed=discord.Embed(title="Zeta Grand Admiral Thrawn --- Ebb and Flow",color = EMPIRE_COLOR, description="Thrawn has +100% Counter Chance, +100% Tenacity, and -50% Speed while any enemies are Fractured. Whenever another Empire ally uses a Special ability while Thrawn is active, that ally gains 15% Turn Meter and, if any enemies are Fractured, Thrawn and Fractured enemies lose 15% Turn Meter.")
+        embed=discord.Embed(title="Zeta Grand Admiral Thrawn --- Ebb and Flow",color = EMPIRE_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_extraturn.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_thrawn.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Thrawn has +50% Counter Chance, +50% Tenacity, and -50% Speed while any enemies are Fractured. Whenever another Empire ally uses a Special ability while Thrawn is active, that ally gains 15% Turn Meter and, if any enemies are Fractured, Thrawn lose 15% Turn Meter.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Thrawn has +100% Counter Chance [+50% Counter Chance], +100% Tenacity [+50% Tenacity], and -50% Speed while any enemies are Fractured. Whenever another Empire ally uses a Special ability while Thrawn is active, that ally gains 15% Turn Meter and, if any enemies are Fractured, Thrawn and Fractured enemies lose 15% Turn Meter.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 10           
 Arena: 10        
@@ -1035,6 +1101,12 @@ Overall: 30/30
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://media.discordapp.net/attachments/331116027335147530/341612670572560384/tex.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7           
 Arena: 6 - W/ Ewoks team      
@@ -1048,11 +1120,17 @@ Overall: 18/30
         await bot.send_message(message.channel, embed=embed) 
                         
     if message.content.startswith('!zCLS'):   
-        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- Rebel Maneuvers",color = REBEL_COLOR, description=" Rebel allies have +50% Counter Chance, +50% Defense, and +15% Offense. Whenever an enemy Resists a detrimental effect, Rebel allies gain 5% Turn Meter.
+        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- Rebel Maneuvers",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_rebel.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20<:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Rebel allies have +50% Counter Chance, +50% Defense, and +15% Offense. 
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Rebel allies have +50% Counter Chance, +50% Defense, and +15% Offense. Whenever an enemy Resists a detrimental effect, Rebel allies gain 5% Turn Meter.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 10           
 Arena: 10 - W/ Any teams      
@@ -1066,11 +1144,17 @@ Overall: 30/30
         await bot.send_message(message.channel, embed=embed)
                             
      if message.content.startswith('!zCLS'):   
-        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- Learn Control",color = REBEL_COLOR, description=" While Luke doesn't have **Call to Action**, he has +50% Counter Chance, +50% Critical Avoidance, +50% Defense, +100% Tenacity, and gains 10% Turn Meter whenever another Rebel ally takes damage.
+        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- Learn Control",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_counterattack.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+While Luke doesn't have **Call to Action**, he has +50% Counter Chance, +50% Critical Avoidance, +50% Defense, +100% Tenacity, and gains 10% Turn Meter whenever another Rebel ally takes damage.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 10           
 Arena: 10 - W/ Any teams      
@@ -1084,11 +1168,17 @@ Overall: 30/30
         await bot.send_message(message.channel, embed=embed)
     
     if message.content.startswith('!zCLS'):   
-        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- It Binds All Things",color = REBEL_COLOR, description=" Luke has +40% Potency. Whenever Luke Resists a detrimental effect he recovers 5% Health and 5% Protection. Whenever Luke inflicts a debuff he gains 10% Turn Meter and other allies gain half that amount.")
+        embed=discord.Embed(title="Zeta Commander Luke Skywalker --- It Binds All Things",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_extraturn.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Luke has +40% Potency. Whenever Luke Resists a detrimental effect he recovers 5% Health and 5% Protection. Whenever Luke inflicts a debuff he gains 10% Turn Meter and other allies gain half that amount.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 10           
 Arena: 10 - W/ Any teams      
@@ -1102,11 +1192,17 @@ Overall: 30/30
         await bot.send_message(message.channel, embed=embed)
     
     if message.content.startswith('!zChirpa'):   
-        embed=discord.Embed(title="Zeta Chief Chirpa --- Simple Tactics",color = discord.Colour(0xCD853F), description=" Ewok allies gain 20% Turn Meter and deal 10% more damage whenever they perform a Basic attack. These effects are halved for other allies. Whenever an Ewok ally uses a Special ability, 60% chance to call another random Ewok ally to Assist.")
+        embed=discord.Embed(title="Zeta Chief Chirpa --- Simple Tactics",color = discord.Colour(0xCD853F)")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_speed.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ewok_chirpa.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Ewok allies gain 20% Turn Meter and deal 10% more damage whenever they perform a Basic attack. These effects are halved for other allies. Whenever an Ewok ally uses a Special ability, 60% chance to call another random Ewok ally to Assist.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7           
 Arena: 6 - W/ Ewok teams      
@@ -1120,11 +1216,17 @@ Overall: 21/30
         await bot.send_message(message.channel, embed=embed)                    
     
     if message.content.startswith('!zHan-Solo'):   
-        embed=discord.Embed(title="Zeta Han Solo (Raid) --- Shoots First",color = REBEL_COLOR, description="Han has +35% Counter Chance and +20% Critical Chance. The first time each turn Han uses his Basic attack, he attacks again dealing 50% less damage. Han takes a bonus turn at the start of each encounter. During this turn Han ignores Taunts and he can only use his Basic ability, but it will Stun the target for 1 turn and can't be Resisted.")
+        embed=discord.Embed(title="Zeta Han Solo (Raid) --- Shoots First",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_speed.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_han.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Han has +35% Counter Chance and +20% Critical Chance. The first time each turn Han uses his Basic attack, he attacks again dealing 50% less damage. Han takes a bonus turn at the start of each encounter. During this turn Han ignores Taunts and he can only use his Basic ability, but it will Stun the target for 1 turn and can't be Resisted
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
 Arena: 8 - W/ Rebel teams      
@@ -1138,11 +1240,17 @@ Overall: 22/30
         await bot.send_message(message.channel, embed=embed)
                             
     if message.content.startswith('!zLuke'):   
-        embed=discord.Embed(title="Zeta Luke Skywalker (Farmboy) --- A New Hope",color = REBEL_COLOR, description="All allies gain 50% Tenacity. Whenever an ally Resists a detrimental effect they gain Advantage for 2 turns.")
+        embed=discord.Embed(title="Zeta Luke Skywalker (Farmboy) --- A New Hope",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_removeharmful.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_luke_ep4.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+All allies gain 50% Tenacity. 
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+All allies gain 50% Tenacity. Whenever an ally Resists a detrimental effect they gain Advantage for 2 turns.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7           
 Arena: 7 - W/ Rebel teams      
@@ -1156,11 +1264,17 @@ Overall: 19/30
         await bot.send_message(message.channel, embed=embed)  
                             
     if message.content.startswith('!zLuke'):   
-        embed=discord.Embed(title="Zeta Luke Skywalker (Farmboy) --- Draw a Bead",color = REBEL_COLOR, description="Luke has 25% Critical Chance. At the start of each of his turns, Luke gains 10% Critical Damage (stacking) until the end of the encounter.")
+        embed=discord.Embed(title="Zeta Luke Skywalker (Farmboy) --- Draw a Bead",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_crit_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_luke_ep4.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Luke has 25% Critical Chance. At the start of each of his turns, Luke gains 10% Critical Damage (stacking) until the end of the encounter.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7           
 Arena: 7 - W/ Rebel teams      
@@ -1174,11 +1288,17 @@ Overall: 19/30
         await bot.send_message(message.channel, embed=embed)
                             
     if message.content.startswith('!zSTH'):   
-        embed=discord.Embed(title="Zeta Stormtrooper Han --- Bluff",color = REBEL_COLOR, description="Han has a 25% chance to remove 30% Turn Meter from each enemy at the start of each of his turns. In addition, Han recovers 5% Protection and has a 25% chance to remove 15% Turn Meter from each enemy when he is damaged.")
+        embed=discord.Embed(title="Zeta Stormtrooper Han --- Bluff",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_stun_immute.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_trooperstorm_han.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Han has a 25% chance to remove 30% Turn Meter from each enemy at the start of each of his turns. In addition, Han recovers 5% Protection and has a 25% chance to remove 15% Turn Meter from each enemy when he is damaged.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8.5           
 Arena: 8.75 - W/ Rebel teams      
@@ -1192,11 +1312,17 @@ Overall: 22.25/30
         await bot.send_message(message.channel, embed=embed) 
                             
     if message.content.startswith('!zLeia'):   
-        embed=discord.Embed(title="Zeta Princess Leia --- Against the Odds",color = REBEL_COLOR, description="Whenever Leia attacks, she has a 55% chance to grant all allies Critical Chance Up for 2 turns, and recovers 5% Health and 5% Protection.")
+        embed=discord.Embed(title="Zeta Princess Leia --- Against the Odds",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_heal_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_leia_princess.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Whenever Leia attacks, she has a 55% chance to grant all allies Critical Chance Up for 2 turns, and recovers 5% Health and 5% Protection.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
 Arena: 8 - W/ Rebel teams      
@@ -1210,11 +1336,17 @@ Overall: 21/30
         await bot.send_message(message.channel, embed=embed)
                             
      if message.content.startswith('!zOld-Ben'):   
-        embed=discord.Embed(title="Zeta Obi-Wan Kenobi (Old Ben) --- Devoted Protector",color = REBEL_COLOR, description=" Old Ben gains Taunt for 2 turns. When this Taunt expires, Old Ben gains Taunt for 1 turn. All allies gain Defense Up for 2 turns.")
+        embed=discord.Embed(title="Zeta Obi-Wan Kenobi (Old Ben) --- Devoted Protector",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_obiwankenobioldhermit_event01.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_obiwanep4.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Old Ben gains Taunt for 2 turns. All allies gain Defense Up for 2 turns.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Old Ben gains Taunt for 2 turns. When this Taunt expires, Old Ben gains Taunt for 1 turn. All allies gain Defense Up for 2 turns.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
 Arena: 8.25 - W/ Rebel teams      
@@ -1228,11 +1360,17 @@ Overall: 21.25/30
         await bot.send_message(message.channel, embed=embed)                  
                             
      if message.content.startswith('!zOld-Ben'):   
-        embed=discord.Embed(title="Zeta Obi-Wan Kenobi (Old Ben) --- If You Strike Me Down",color = REBEL_COLOR, description="Whenever another Jedi or Rebel ally takes damage, Old Ben gains 5% Turn Meter. The first time Old Ben is defeated, all allies gain Offense Up and Speed Up for 2 turns, recover 50% Health and 50% Protection, and gain 25% Turn Meter.")
+        embed=discord.Embed(title="Zeta Obi-Wan Kenobi (Old Ben) --- If You Strike Me Down",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_removeharmful.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_obiwanep4.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Whenever another Jedi or Rebel ally takes damage, Old Ben gains 5% Turn Meter. The first time Old Ben is defeated, all allies gain Offense Up and Speed Up for 2 turns, recover 50% Health and 50% Protection, and gain 25% Turn Meter.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
 Arena: 8 - W/ Rebel teams      
@@ -1246,11 +1384,17 @@ Overall: 21/30
         await bot.send_message(message.channel, embed=embed)             
                             
     if message.content.startswith('!zLogray'):   
-        embed=discord.Embed(title="Zeta Logray --- Shaman's Insight",color = discord.Colour(0xCD853F), description="Whenever an Ewok ally scores a Critical Hit, Logray gains 5% Turn Meter. While Logray is active, whenever an Ewok ally scores a Critical Hit, that ally gains Health Up for 2 turns, and then all Ewok allies with Health Up recover 10% Health.")
+        embed=discord.Embed(title="Zeta Logray --- Shaman's Insight",color = discord.Colour(0xCD853F)")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_crit_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ewok_logray.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Whenever an Ewok ally scores a Critical Hit, Logray gains 5% Turn Meter. While Logray is active, whenever an Ewok ally scores a Critical Hit, that ally gains Health Up for 2 turns, and then all Ewok allies with Health Up recover 10% Health.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
 Arena: 6.5 - W/ Rebel teams      
@@ -1264,11 +1408,17 @@ Overall: 19.5/30
         await bot.send_message(message.channel, embed=embed)
                         
      if message.content.startswith('!zWicket'):   
-        embed=discord.Embed(title="Zeta Wicket --- Furtive Tactics",color = discord.Colour(0xCD853F), description="Wicket gains 10% Critical Damage for each living Ewok ally and each Stealthed ally. At the end of his turn, Wicket has a 50% chance to take another turn. This chance is reduced to 10% if this effect triggered in the previous turn. Whenever Wicket scores a Critical Hit, all Ewok allies recover 4% Health and 2% Protection.")
+        embed=discord.Embed(title="Zeta Wicket --- Furtive Tactics",color = discord.Colour(0xCD853F)")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_extraturn.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ewok_wicket.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Wicket gains 10% Critical Damage for each living Ewok ally and each Stealthed ally. At the end of his turn, Wicket has a 50% chance to take another turn. This chance is reduced to 10% if this effect triggered in the previous turn. Whenever Wicket scores a Critical Hit, all Ewok allies recover 4% Health and 2% Protection.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8.5           
 Arena: 6.5 - W/ Rebel teams      
@@ -1287,8 +1437,12 @@ Overall: 20/30
          embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
          embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_daka.png")
          embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
-         embed.add_field(name="**BEFORE ZETA**", value="When another ally is defeated, Old Daka gains 50% Turn Meter and the cooldown of Chant of Resurrection is reduced by 1. When another ally is Revived while Old Daka is active, the Revived ally gains 20% Turn Meter and gains Offense Up and Defense Up for 2 turns.")
-         embed.add_field(name="**AFTER ZETA**", value="When another ally is defeated, Old Daka gains 50% Turn Meter and the cooldown of Chant of Resurrection is reduced by 1. When another ally is Revived while Old Daka is active, the Revived ally gains 20% Turn Meter and gains Offense Up and Defense Up for 2 turns, and Old Daka gains +10% Max Health (stacking) until the end of the encounter.")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+When another ally is defeated, Old Daka gains 50% Turn Meter and the cooldown of Chant of Resurrection is reduced by 1. When another ally is Revived while Old Daka is active, the Revived ally gains 20% Turn Meter and gains Offense Up and Defense Up for 2 turns.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+When another ally is defeated, Old Daka gains 50% Turn Meter and the cooldown of Chant of Resurrection is reduced by 1. When another ally is Revived while Old Daka is active, the Revived ally gains 20% Turn Meter and gains Offense Up and Defense Up for 2 turns, and Old Daka gains +10% Max Health (stacking) until the end of the encounter.
+         """)
          embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: ?           
 Arena: ? - W/ ?      
