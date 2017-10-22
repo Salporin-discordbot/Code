@@ -464,7 +464,7 @@ Nightsister allies have +30 Speed, +30% Offense, gain 50% Turn Meter when they f
         """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9          
-Arena: 7 - W/ Nightsister team       
+Arena: 7 - W/ Nightsister team        
 Raids: 8 - Rancor Raids (With full Nightsisters team) 
 
 Overall: 24/30
@@ -558,7 +558,7 @@ Overall: 24.25/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_bodhi.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-While Bodhi is active, Rebel allies with Offense Up also gain +50% Defense. At the end of each of his turns, Bodhi grants Offense Up for 2 turns to a random ally who doesn't have it.
+While Bodhi is active, Rebel allies with Offense Up also gain +50% Defense. 
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
 While Bodhi is active, Rebel allies with Offense Up also gain +50% Defense. At the end of each of his turns, Bodhi grants Offense Up for 2 turns to a random ally who doesn't have it.
@@ -602,21 +602,22 @@ Overall: 25.5/30
         await bot.send_message(message.channel, embed=embed)
 
     if message.content.startswith("!zCassian"): 
-        embed=discord.Embed(title="Zeta Cassian Andor --- Groundwork",color = REBEL_COLOR, description="At the start of each encounter all Rebel allies gain Protection Up (20%) for 3 turns, all Rebel Attackers gain Defense Up for 3 turns, all Rebel Supports gain Potency Up for 3 turns, and all Rebel Tanks gain Tenacity Up for 3 turns. If K-2SO is present, he gains all of these buffs.")
+        embed=discord.Embed(title="Zeta Cassian Andor --- Groundwork",color = REBEL_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_rebel.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_cassian.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+At the start of each encounter, all Rebel Attackers gain Defense Up for 3 turns, all Rebel Supports gain Potency Up for 3 turns, and all Rebel Tanks gain Tenacity Up for 3 turns. If K-2SO is present, he gains all of these buffs.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
-
+At the start of each encounter all Rebel allies gain Protection Up (20%) for 3 turns, all Rebel Attackers gain Defense Up for 3 turns, all Rebel Supports gain Potency Up for 3 turns, and all Rebel Tanks gain Tenacity Up for 3 turns. If K-2SO is present, he gains all of these buffs.
         """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9           
 Arena: 8 - W/ Rebel teams        
 Raids: 8.75 - Rancor Raids 
+
 Overall: 25.75/30
         """)
         embed.add_field(name="Priority", value="Medium")
@@ -627,15 +628,22 @@ Overall: 25.75/30
 
 
     if message.content.startswith("!zCody"): 
-        embed=discord.Embed(title="Zeta CC-2224 Cody --- Ghost Company Commander",color=discord.Colour(0xED9E27), description="Clone allies gain 30% Critical Chance, and other allies gain half that amount. Cody gains 60% Defense for each living Clone ally and other Clone allies gain half that amount. Clone allies recover 5% of their Max Protection whenever they use a Basic ability.")
+        embed=discord.Embed(title="Zeta CC-2224 Cody --- Ghost Company Commander",color=discord.Colour(0xED9E27)")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_crit_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_trooperclone_cody.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Clone allies gain 25% Critical Chance, and other allies gain half that amount. Cody gains 50% Defense for each living Clone ally and other Clone allies gain half that amount. 
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Clone allies gain 30% Critical Chance [+5%], and other allies gain half that amount. Cody gains 60% Defense [+10% Defense] for each living Clone ally and other Clone allies gain half that amount. Clone allies recover 5% of their Max Protection whenever they use a Basic ability.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War:  6.5           
 Arena: 6 - W/ Clone teams       
-Raids: 9.5 - AAT Raids
+Raids: 9.5 - P4 hAAT Raids
+
 Overall: 21.5/30
         """)
         embed.add_field(name="Priority", value="High")
@@ -646,11 +654,17 @@ Overall: 21.5/30
 
 
     if message.content.startswith("!zChewbacca"): 
-        embed=discord.Embed(title="Zeta Clone Wars Chewbacca --- Defiant Roar",color=discord.Colour(0x633820), description="Chewbacca dispels all debuffs from himself, recovers 50% of his Max Health, gains Defense Up for 3 Turns, and has a 50% Chance to gain 25% Turn Meter.")
+        embed=discord.Embed(title="Zeta Clone Wars Chewbacca --- Defiant Roar",color=discord.Colour(0x633820)")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_chewbacca_special02.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_chewbacca.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Chewbacca recovers 40% of his Max Health, gains Defense Up for 3 Turns, and has a 25% Chance to gain 25% Turn Meter.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Chewbacca dispels all debuffs from himself, recovers 50% of his Max Health [+10% Heal], gains Defense Up for 3 Turns, and has a 50% Chance to gain 25% Turn Meter [+25% TM Gain Chance].
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 6          
 Arena: 5 - W/ Any teams      
@@ -665,16 +679,23 @@ Overall: 14/30
 
 
     if message.content.startswith("!zDooku"): 
-        embed=discord.Embed(title="Zeta Count Dooku --- Flawless Riposte",color = SITH_COLOR, description="Count Dooku has 100% Counter Chance. In addition, whenever he attacks outside of his turn, he deals 30% more damage, has a 25% chance to gain 45% Turn Meter, recovers 10% Protection, and gains Critical Hit Immunity for 1 turn.")
+        embed=discord.Embed(title="Zeta Count Dooku --- Flawless Riposte",color = SITH_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_counterattack.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_dooku.png")
-         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Count Dooku has 100% Counter Chance. In addition, whenever he attacks outside of his turn, he deals 15% more damage, has a 25% chance to gain 45% Turn Meter.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Count Dooku has 100% Counter Chance. In addition, whenever he attacks outside of his turn, he deals 30% more damage [+15% Damage], has a 25% chance to gain 45% Turn Meter, recovers 10% Protection, and gains Critical Hit Immunity for 1 turn.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9          
 Arena: 9.75 - W/ Sith teams       
 Raids: 6 - None 
-Overall: /30
+
+Overall: 24.75/30
         """)
         embed.add_field(name="Priority", value="Medium")
         embed.add_field(name="Editors Note", value="Incredible zeta. Will be recovering a lot of Protection and gaining Turn Meter when counter-attacking!")
@@ -684,11 +705,17 @@ Overall: /30
 
 
     if message.content.startswith("!zFives"): 
-        embed=discord.Embed(title="Zeta CT-5555 Fives --- Tactical Awareness",color=discord.Colour(0x62779D), description="Fives has 85% Counter Chance and +50% Counter Damage. Fives gains 15% Turn Meter whenever another Clone ally takes damage and 7.5% Turn Meter whenever a non-Clone ally takes damage.")
+        embed=discord.Embed(title="Zeta CT-5555 Fives --- Tactical Awareness",color=discord.Colour(0x62779D)")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_counterattack.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_trooperclone_fives.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Fives has 85% Counter Chance and +50% Counter Damage. 
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Fives has 85% Counter Chance and +50% Counter Damage. Fives gains 15% Turn Meter whenever another Clone ally takes damage and 7.5% Turn Meter whenever a non-Clone ally takes damage.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 6          
 Arena: 7 - W/ Any teams       
@@ -704,11 +731,17 @@ Overall: 21.5/30
 
 
     if message.content.startswith("!zMaul"): 
-        embed=discord.Embed(title="Zeta Darth Maul --- Dancing Shadows",color = SITH_COLOR, description="All Sith allies gain 20% Evasion, gain 20% Turn Meter and Stealth for 1 turn at the start of each encounter and whenever they Evade or are Critically Hit, can't be Critically Hit while Stealthed, and gain Advantage for 2 turns whenever Stealth expires. The Stealth and Turn Meter from this ability ignores Taunting allies.")
+        embed=discord.Embed(title="Zeta Darth Maul --- Dancing Shadows",color = SITH_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_dodge.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_maul.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+All Sith allies gain 20% Evasion, gain 20% Turn Meter at the start of each encounter and whenever they Evade or are Critically Hit. The Turn Meter from this ability ignores Taunting allies.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+All Sith allies gain 20% Evasion, gain 20% Turn Meter and Stealth for 1 turn at the start of each encounter and whenever they Evade or are Critically Hit, can't be Critically Hit while Stealthed, and gain Advantage for 2 turns whenever Stealth expires. The Stealth and Turn Meter from this ability ignores Taunting allies
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9          
 Arena: 10 - W/ Sith teams        
@@ -722,11 +755,17 @@ Overall: 27/30
 
 
     if message.content.startswith("!zNihilus"): 
-        embed=discord.Embed(title="Zeta Darth Nihilus --- Lord of Hunger",color = SITH_COLOR, description="Sith allies gain 60% Offense and 150% Health Steal. Sith allies lose all Protection and gain that much Max Health. Sith allies are immune to Healing effects that aren't Health Steal and can't score Critical Hits.")
+        embed=discord.Embed(title="Zeta Darth Nihilus --- Lord of Hunger",color = SITH_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_sith.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_nihilus.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Sith allies gain 60% Offense and 100% Health Steal. Sith allies lose all Protection and gain that much Max Health. Sith allies are immune to Healing effects that aren't Health Steal and can't score Critical Hits.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Sith allies gain 60% Offense and 150% Health Steal [+50% Health Steal]. Sith allies lose all Protection and gain that much Max Health. Sith allies are immune to Healing effects that aren't Health Steal and can't score Critical Hits.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9          
 Arena: 9.25 - W/ Sith teams        
@@ -740,11 +779,17 @@ Overall: 26.75/30
 
 
     if message.content.startswith("!zNihilus"): 
-        embed=discord.Embed(title="Zeta Darth Nihilus --- Wound in the Force",color = SITH_COLOR, description="At the start of each of his turns, Nihilus inflicts Damage Over Time for 2 turns on a random enemy that doesn't have any debuffs. If all enemies are debuffed, inflict Damage Over Time on a random enemy. At the start of each enemy turn, Nihilus inflicts Health Down on them for 2 turns.")
+        embed=discord.Embed(title="Zeta Darth Nihilus --- Wound in the Force",color = SITH_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_kill.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_nihilus.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+At the start of each of his turns, Nihilus inflicts Damage Over Time for 2 turns on a random enemy that doesn't have any debuffs. If all enemies are debuffed, inflict Damage Over Time on a random enemy. 
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+At the start of each of his turns, Nihilus inflicts Damage Over Time for 2 turns on a random enemy that doesn't have any debuffs. If all enemies are debuffed, inflict Damage Over Time on a random enemy. At the start of each enemy turn, Nihilus inflicts Health Down on them for 2 turns.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9           
 Arena: 9.25 - W/ Sith teams      
@@ -758,11 +803,17 @@ Overall: 26.75/30
 
 
     if message.content.startswith("!zSidious"): 
-        embed=discord.Embed(title="Zeta Darth Sidious --- Sadistic Glee",color = SITH_COLOR, description="Darth Sidious recovers 20% of his Max Health and gains 50% Turn Meter whenever any unit is defeated. In addition, he has +35% Evasion against Jedi attacks, +50% Potency, and gains Max Health equal to his Potency percentage.")
+        embed=discord.Embed(title="Zeta Darth Sidious --- Sadistic Glee",color = SITH_COLOR") 
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_heal.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_sidious.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+        embed.add_field(name="**BEFORE ZETA**:", value="""
+Darth Sidious recovers 20% of his Max Health and a 25% chance to gain 50% Turn Meter whenever any unit is defeated. In addition, he has +35% Evasion against Jedi attacks.
+        """)
+        embed.add_field(name="**AFTER ZETA**:", value="""
+Darth Sidious recovers 20% of his Max Health and gains 50% Turn Meter [100% TM Gain Chance] whenever any unit is defeated. In addition, he has +35% Evasion against Jedi attacks, +50% Potency, and gains Max Health equal to his Potency percentage.
+        """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8          
 Arena: 7.5 - W/ Sith teams      
