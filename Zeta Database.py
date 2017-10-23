@@ -296,16 +296,16 @@ Overall: 10/30
         
 
     if message.content.startswith('!zQGJ'):
-        embed=discord.Embed(title="Zeta Qui-Gon Jinn --- Agility Training",color = JEDI_COLOR, description="Jedi Allies have +30 Speed, gain Offense equal to 3 times their Speed, and gain Foresight for 2 turns at the start of each encounter and whenever any unit is defeated.")
+        embed=discord.Embed(title="Zeta Qui-Gon Jinn --- Agility Training",color = JEDI_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_speed.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_quigon.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Jedi Allies have +25 Speed.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
-
+Jedi Allies have +30 Speed [+5 Speed], gain Offense equal to 3 times their Speed, and gain Foresight for 2 turns at the start of each encounter and whenever any unit is defeated.
         """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 9           
@@ -1020,16 +1020,16 @@ Overall: /30
         await bot.send_message(message.channel, embed=embed)
 
     if message.content.startswith("!zVeers"): 
-        embed=discord.Embed(title="Zeta General Veers --- Agressive Tactician",color = EMPIRE_COLOR, description="Whenever an enemy is defeated while Veers is active, Imperial Trooper allies gain Offense Up for 2 turns, gain 50% Turn Meter, and recover 10% Protection. While Veers is active, Imperial Trooper allies have +15% Critical Chance.")
+        embed=discord.Embed(title="Zeta General Veers --- Agressive Tactician",color = EMPIRE_COLOR")
         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_attack_buff.png")
         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_veers.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Whenever an enemy is defeated while Veers is active, Imperial Trooper allies have an 80% chance to gain Offense Up for 2 turns and a 40% chance to gain 50% Turn Meter. While Veers is active, Imperial Trooper allies have +15% Critical Chance.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
-
+Whenever an enemy is defeated while Veers is active, Imperial Trooper allies gain Offense Up for 2 turns, gain 50% Turn Meter, and recover 10% Protection. While Veers is active, Imperial Trooper allies have +15% Critical Chance.
         """)                     
        embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7          
@@ -1150,7 +1150,7 @@ Overall: 30/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+While Luke doesn't have **Call to Action**, he has +50% Counter Chance, +50% Defense, and gains 10% Turn Meter whenever another Rebel ally takes damage.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
 While Luke doesn't have **Call to Action**, he has +50% Counter Chance, +50% Critical Avoidance, +50% Defense, +100% Tenacity, and gains 10% Turn Meter whenever another Rebel ally takes damage.
@@ -1174,7 +1174,7 @@ Overall: 30/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_lukebespin.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Luke has +40% Potency. Whenever Luke Resists a detrimental effect he recovers 5% Health. 
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
 Luke has +40% Potency. Whenever Luke Resists a detrimental effect he recovers 5% Health and 5% Protection. Whenever Luke inflicts a debuff he gains 10% Turn Meter and other allies gain half that amount.
@@ -1198,7 +1198,7 @@ Overall: 30/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ewok_chirpa.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 10 <:omega:327437590657499137> and 20 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Ewok allies gain 20% Turn Meter and deal 10% more damage whenever they perform a Basic attack. These effects are halved for other allies.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
 Ewok allies gain 20% Turn Meter and deal 10% more damage whenever they perform a Basic attack. These effects are halved for other allies. Whenever an Ewok ally uses a Special ability, 60% chance to call another random Ewok ally to Assist.
@@ -1222,10 +1222,10 @@ Overall: 21/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_han.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Han has +35% Counter Chance and +10% Critical Chance. Han takes a bonus turn at the start of each encounter. During this turn Han ignores Taunts and he can only use his Basic ability, but it will Stun the target for 1 turn and can't be Resisted.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
-Han has +35% Counter Chance and +20% Critical Chance. The first time each turn Han uses his Basic attack, he attacks again dealing 50% less damage. Han takes a bonus turn at the start of each encounter. During this turn Han ignores Taunts and he can only use his Basic ability, but it will Stun the target for 1 turn and can't be Resisted
+Han has +35% Counter Chance and +20% Critical Chance [+10% Crit Chance]. The first time each turn Han uses his Basic attack, he attacks again dealing 50% less damage. Han takes a bonus turn at the start of each encounter. During this turn Han ignores Taunts and he can only use his Basic ability, but it will Stun the target for 1 turn and can't be Resisted.
         """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 8           
@@ -1273,7 +1273,7 @@ Overall: 19/30
 
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
-Luke has 25% Critical Chance. At the start of each of his turns, Luke gains 10% Critical Damage (stacking) until the end of the encounter.
+Luke has 25% Critical Chance.
         """)                     
         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: 7           
@@ -1294,7 +1294,7 @@ Overall: 19/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_trooperstorm_han.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Han has a 25% chance to remove 30% Turn Meter from each enemy at the start of each of his turns. In addition, Han has a 25% chance to remove 15% Turn Meter from each enemy when he is damaged.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
 Han has a 25% chance to remove 30% Turn Meter from each enemy at the start of each of his turns. In addition, Han recovers 5% Protection and has a 25% chance to remove 15% Turn Meter from each enemy when he is damaged.
@@ -1318,7 +1318,7 @@ Overall: 22.25/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_leia_princess.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Whenever Leia attacks, she has a 55% chance to grant all allies Critical Chance Up for 2 turns, and a 55% chance to recover 5% Health.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
 Whenever Leia attacks, she has a 55% chance to grant all allies Critical Chance Up for 2 turns, and recovers 5% Health and 5% Protection.
@@ -1366,7 +1366,7 @@ Overall: 21.25/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_obiwanep4.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Whenever another Jedi or Rebel ally takes damage, Old Ben gains 3% Turn Meter. The first time Old Ben is defeated, all allies gain Offense Up and Speed Up for 2 turns and recover 30% Health and 30% Protection.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
 Whenever another Jedi or Rebel ally takes damage, Old Ben gains 5% Turn Meter. The first time Old Ben is defeated, all allies gain Offense Up and Speed Up for 2 turns, recover 50% Health and 50% Protection, and gain 25% Turn Meter.
@@ -1390,7 +1390,7 @@ Overall: 21/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ewok_logray.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Whenever an Ewok ally scores a Critical Hit, Logray gains 5% Turn Meter.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
 Whenever an Ewok ally scores a Critical Hit, Logray gains 5% Turn Meter. While Logray is active, whenever an Ewok ally scores a Critical Hit, that ally gains Health Up for 2 turns, and then all Ewok allies with Health Up recover 10% Health.
@@ -1414,7 +1414,7 @@ Overall: 19.5/30
         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ewok_wicket.png")
         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
         embed.add_field(name="**BEFORE ZETA**:", value="""
-
+Wicket gains 10% Critical Damage for each living Ewok ally and each Stealthed ally. At the end of his turn, Wicket has a 50% chance to take another turn. This chance is reduced to 10% if this effect triggered in the previous turn.
         """)
         embed.add_field(name="**AFTER ZETA**:", value="""
 Wicket gains 10% Critical Damage for each living Ewok ally and each Stealthed ally. At the end of his turn, Wicket has a 50% chance to take another turn. This chance is reduced to 10% if this effect triggered in the previous turn. Whenever Wicket scores a Critical Hit, all Ewok allies recover 4% Health and 2% Protection.
