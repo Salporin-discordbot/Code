@@ -1448,14 +1448,325 @@ Galactic War: ?
 Arena: ? - W/ ?      
 Raids: ? - ?
 
-Overall: 20/30
+Overall: ?/30
         """)
          embed.add_field(name="Priority", value="?")
          embed.add_field(name="Editors Note", value="'?")
     
-        await bot.send_message(message.channel, embed=embed)                              
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zBB-8'):   
+         embed=discord.Embed(title="Zeta BB-8 --- Roll with the Punches",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_counterattack.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_bb8.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+BB-8 has 80% Counter Chance.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+BB-8 has 80% Counter Chance. When BB-8 attacks out of turn, he calls a random Resistance ally to Assist.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?")
+    
+         await bot.send_message(message.channel, embed=embed)      
                                                     
+     if message.content.startswith('!zBB-8'):   
+         embed=discord.Embed(title="Zeta BB-8 --- Self-Preservation Protocol",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_foresight.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_bb8.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+When BB-8 takes damage he has a 50% chance to gain Foresight for 2 turns. At the start of each encounter, if BB-8 is active, Droid allies gain 8% Turn Meter for each active Droid ally.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+When BB-8 takes damage he has a 50% chance to gain Foresight for 2 turns. At the start of each encounter, if BB-8 is active, Droid allies gain 8% Turn Meter for each active Droid ally. When BB-8 Evades, Droid allies recover 8% Health and 8% Protection.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?")
+    
+         await bot.send_message(message.channel, embed=embed)                         
                             
+     if message.content.startswith('!zCHS'):   
+         embed=discord.Embed(title="Zeta Captain Han Solo --- Nick of Time",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_crit_buff.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_hoth_han.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+Captain Han Solo has +15% Critical Chance and +30% Critical Damage. In addition, at the end of his turn, Han recovers Health equal to 10% of his Max Health. If Han already has full Health, the least healthy ally is healed instead.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Captain Han Solo has +15% Critical Chance and +30% Critical Damage. In addition, at the end of his turn, Han recovers Health equal to 10% of his Max Health. If Han already has full Health, the least healthy ally is healed instead. Whenever Han uses his Basic attack he gains +10% Max Health (stacking) for 3 turns.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?")
+    
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zVeteran-Chewbacca'):   
+         embed=discord.Embed(title="Zeta Veteran Smuggler Chewbacca --- Let the Wookiee Win",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_attack_buff.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_tfa_chewbacca.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+At the start of each enemy turn, Chewbacca gains 12% Offense (stacking) until the next time he uses an ability.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+At the start of each enemy turn, Chewbacca gains 12% Offense (stacking) until he uses 2 abilities [Offense Duration +1].
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?"
+    
+         await bot.send_message(message.channel, embed=embed)
+                         
+     if message.content.startswith('!zVeteran-Han'):   
+         embed=discord.Embed(title="Zeta Veteran Smuggler Han Solo --- Swindle",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_supply.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_tfa_han.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+When an enemy gains a buff, Han gains 25% Counter Chance (stacking) until the end of his next turn. When Han gains a debuff, he gains 50% Defense (stacking) until the end of his next turn.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+When an enemy gains a buff, Han gains 25% Counter Chance (stacking) until the end of his next turn. When Han gains a debuff, he gains 50% Defense (stacking) until the end of his next turn. When Han gains any status effect, he gains 50 Armor Penetration (stacking) until the end of his next turn.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?")
+                             
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zTalzin'):   
+         embed=discord.Embed(title="Zeta Mother Talzin --- The Great Mother",color = NIGHTSISTER_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_potency.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_nightsisters_talzin.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+Nightsister allies have +50% Potency and +30 Speed. When a Nightsister ally uses a Special ability, they inflict Plague on the selected target for 3 turns, which can't be Evaded. When an enemy Resists a detrimental effect, all Nightsister allies gain 5% Turn Meter.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Nightsister allies have +50% Potency and +30 Speed. When a Nightsister ally uses a Special ability, they inflict Plague on the selected target for 3 turns, which can't be Evaded. When an enemy Resists a detrimental effect, Nightsister allies gain 5% Turn Meter. When a Nightsister ally uses a Basic ability during their turn, a random defeated Nightsister ally is Revived with 50% Health and called to Assist, then the Revived ally is immediately defeated unless an enemy was defeated (the Revived ally can't be Revived by this effect again until the end of the next turn).
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?")      
+        
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zTalzin'):   
+         embed=discord.Embed(title="Zeta Mother Talzin --- Plaguebearer",color = NIGHTSISTER_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_plague.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_nightsisters_talzin.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+At the start of each enemy turn, if they are Plagued and Talzin is active, they inflict Plague on another random enemy, which can't be Evaded or Resisted.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+At the start of each enemy turn, if they are Plagued and Talzin is active, they inflict Plague on another random enemy, which can't be Evaded or Resisted. When any unit falls below half health, Talzin gains 35% Turn Meter.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?") 
+         
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zHera'):   
+         embed=discord.Embed(title="Zeta Hera Syndulla --- Play to Strengths",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_hera_s3_special01.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_hera_s3.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+Call another target ally to Assist. That ally's attack has +25% Potency and deals 35% more damage.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Call another target ally to Assist. That ally's attack has +50% Potency and deals 35% more damage. If target ally is Phoenix, Dispel all debuffs on them, reduce their cooldowns by 1, and grant them 50% Turn Meter.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?")
+                     
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zKanan'):   
+         embed=discord.Embed(title="Zeta Kanan Jarrus --- Total Defense",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_kanan_s3_special02.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_kanan_s3.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+Kanan Dispels all debuffs from himself, then grants himself and another target ally Protection Up (40%) for 2 turns.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Dispel all debuffs on Phoenix allies and grant them Defense Up for 3 turns. Kanan grants himself and another target ally Foresight and Protection Up (40%) for 2 turns. When each of these Foresights expire, Kanan gains 100% Turn Meter and other Phoenix allies gain 50% Turn Meter.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?") 
+                             
+         await bot.send_message(message.channel, embed=embed)    
+                             
+     if message.content.startswith('!zEzra'):   
+         embed=discord.Embed(title="Zeta Ezra Bridger --- Flourish",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_ezra_s3_special01.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ezra_s3.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+Deal Physical damage to target enemy and Dispel all buffs on them. If the enemy had no buffs, this attack's cooldown is reduced by 1 and Ezra gains 50% Turn Meter instead.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Deal Physical damage [+50% Damage] to target enemy and Dispel all buffs on them. If the enemy had no buffs, this attack's cooldown is reduced by 1 and Ezra gains 75% Turn Meter [+25% TM Gain] instead. Ezra gains Defense Up for 2 turns.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?") 
+                             
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zEzra'):   
+         embed=discord.Embed(title="Zeta Ezra Bridger --- Flourish",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_ezra_s3_special01.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_ezra_s3.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+Deal Physical damage to target enemy and Dispel all buffs on them. If the enemy had no buffs, this attack's cooldown is reduced by 1 and Ezra gains 50% Turn Meter instead.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Deal Physical damage [+50% Damage] to target enemy and Dispel all buffs on them. If the enemy had no buffs, this attack's cooldown is reduced by 1 and Ezra gains 75% Turn Meter [+25% TM Gain] instead. Ezra gains Defense Up for 2 turns.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?") 
+                             
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zZeb'):   
+         embed=discord.Embed(title="Zeta Garazeb 'Zeb' Orrelios --- Staggering Sweep",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_zeb_s3_special01.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_zeb_s3.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+Deal Physical damage to target enemy and Stagger them for 1 turn. If the target has no debuffs, the attack deals 25% more damage and can't be Resisted.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Deal Physical damage to target enemy and Stagger them for 1 turn. Zeb gains 10% Turn Meter for each active Phoenix ally. If the target has no debuffs, this attack can't be Resisted, deals double damage [+75% Damage], and deals bonus damage equal to 20% of the enemy's Max Health. If the target has any buffs, ignore their Armor. If the target has any debuffs, this attack has +50% Critical Damage. This attack can't be Evaded.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?") 
+                             
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zSabine'):   
+         embed=discord.Embed(title="Zeta Sabine Wren --- Demolish",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_sabine_s3_special02.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_sabine_s3.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+DDeal Physical damage to all enemies. Expose and Stagger target enemy for 2 turns. This attack can't be Countered or Evaded.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Deal Physical damage to all enemies, Stagger them for 2 turns, and Expose target enemy for 2 turns. For each active Phoenix ally, deal +15% more damage and Expose a random enemy. Phoenix allies gain Critical Chance Up and Offense Up for 2 turns. If this attack scores a Critical Hit, reduce Sabine's cooldowns by 2. This attack can't be Countered or Evaded.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?") 
+                             
+         await bot.send_message(message.channel, embed=embed)
+                             
 #beginning of characters database
 
     if message.content.startswith("!Aayla-Secura"): 
@@ -1768,7 +2079,7 @@ Farmability: <emoji>
         embed.add_field(name="Basic Ability - Reckless Fling- <:chopbasic:339727868022226944>", value="Deal Physical damage to target enemy and grant a random Phoenix ally Offense Up, Defense Up, or Speed Up at random for 2 turns, with a 60% chance to reduce that ally's cooldowns by 1.")
         embed.add_field(name="Special Ability - Cantankerous Clanker - <:chopspecial:339727868256976896>", value="Chopper gains Taunt for 1 turn. While he has this Taunt buff, Chopper gains 30% Evasion.")
         embed.add_field(name="Special Ability - Metal Menace - <:chopspecial1:339727868055519252>", value="Dispel all buffs on target enemy, For each buff dispelled away, all enemies lose 10% Turn Meter, and Chopper gains 25% Protection. Droid targets are also Stunned for 1 turn.")
-        embed.add_field(name="Unique Ability - Maintenance Protocols - <:chopunique:339727867631894540>", value="At the start of his turn, Chopper recovers 15% of his Max Health. In addition, whenever he is damaged, he gains Protection Up (15%) if he doesn't have Protection Up.")
+        embed.add_field(name="Unique Ability - Maintenance Protocols - <:chopunique:339727867631894540>", value="At the start of his turn, Chopper recovers 15% of his Max Health. In addition, whenever he is damaged by an attack, he gains Protection Up (15%) if he doesn't have Protection Up. Additionally, Chopper has a 30% Chance to Assist when another Phoenix or Droid ally uses an ability during their turn (this Assist is not shared with Phoenix allies).")
         embed.add_field(name="Usage", value="Chopper (AKA C1-10P) have various style of teams to play with like Resistance, Phoenix, No Dispeller, etc. teams. His Cantankerous Clanker can give him a huge evasion for 1 turn. His Metal Menace can recover a insane amount of Protection to keep him alive as long as possible. He is a very good characters under a Resistance team since he can make enemies lose Turn Meter and keep Resistance applying Exposes to enemies. He is a very good (not the best) character for beginners. 😎")
         embed.add_field(name="Ahnald Ranking", value="**Padawan**")     
         
@@ -2193,7 +2504,7 @@ Farmability: <emoji>
         embed.add_field(name="<:zeta:327437604465278977>", value="No Zeta ability")
         embed.add_field(name="Stats", value="`Power: 16299` `Speed: 143` `Health: 19,421` (<:gearicong111:330366020365713408>, without mods)")
         embed.add_field(name="Basic Ability - Rushing Strike - <:EzraBasic:344014778944978955>", value="Deal Physical damage to target enemy with a 40% chance to attack again.")
-        embed.add_field(name="Special Ability - Flourish - <:EzraSpecial:344014793927032852>", value="Deal Physical damage to target enemy and Dispel all buffs on them. If the enemy had no buffs, this attack cooldown is reduced by 1 and Ezra gains 50% Turn Meter instead.")
+        embed.add_field(name="Special Ability - Flourish - <:EzraSpecial:344014793927032852>", value="Deal Physical damage to target enemy and Dispel all buffs on them. If the enemy had no buffs, this attack's cooldown is reduced by 1 and Ezra gains 75% Turn Meter instead. Ezra gains Defense Up for 2 turns.")
         embed.add_field(name="Special Ability - Watch and Learn - <:EzraSpecial1:344014805205778432>", value="Target ally attacks and then Ezra assists them, dealing 20% more damage. Both attackers gain a bonus effect based on the chosen ally's role: - Attacker: +100% Crit on this attack - Tank: Protection Up (40%) for 2 turns - Support: +40% Turn Meter Gain.")
         embed.add_field(name="Unique Ability - Push Through - <:EzraUnique:344014817885159425>", value="Ezra gains 10% Offense at the end of his turns. The effect can stack up to 40%. This bonus is reset if Ezra is defeated.")
         embed.add_field(name="Usage", value="Ezra is a fabulous character for all players at any levels, he is farmable at Cantina Battle 2-B or Fleet Store. His **Rushing Strike** has a chance to attack again, and doubled if Ezra isn't debuffed. **Flourish** can deal a insane amount of damage, and dispel all buffs from that enemy. **Watch and Learn** give both of them a bonus effect based on the Assist role. Ezra is great for Palpatine, Thrawn and Yoda event.")
