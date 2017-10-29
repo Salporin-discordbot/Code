@@ -1750,10 +1750,58 @@ Overall: ?/30
          embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_sabine_s3.png")
          embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 16 <:omega:327437590657499137> and 40 <:mk3:327437579672879105>")
          embed.add_field(name="**BEFORE ZETA**", value="""
-DDeal Physical damage to all enemies. Expose and Stagger target enemy for 2 turns. This attack can't be Countered or Evaded.
+Deal Physical damage to all enemies. Expose and Stagger target enemy for 2 turns. This attack can't be Countered or Evaded.
          """)
          embed.add_field(name="**AFTER ZETA**", value="""
 Deal Physical damage to all enemies, Stagger them for 2 turns, and Expose target enemy for 2 turns. For each active Phoenix ally, deal +15% more damage and Expose a random enemy. Phoenix allies gain Critical Chance Up and Offense Up for 2 turns. If this attack scores a Critical Hit, reduce Sabine's cooldowns by 2. This attack can't be Countered or Evaded.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?") 
+                             
+         await bot.send_message(message.channel, embed=embed)
+                             
+     if message.content.startswith('!zHermit-Yoda'):   
+         embed=discord.Embed(title="Zeta Hermit Yoda --- Strength Flows From the Force",color = JEDI_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.ability_hermityoda_special02.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_yodahermit.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+All allies have their current Health percentages equalized. (Health equalizing effects ignore Healing Immunity.) Then, all allies recover 20% Health.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+All allies have their current Health percentages equalized. (Health equalizing effects ignore Healing Immunity.) Then, all allies recover 20% Health and Protection and Jedi allies gain Foresight for 2 turns.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?") 
+                             
+         await bot.send_message(message.channel, embed=embed)
+                            
+     if message.content.startswith('!zHermit-Yoda'):   
+         embed=discord.Embed(title="Zeta Hermit Yoda --- Do or Do Not",color = JEDI_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_extraturn.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_yodahermit.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+Whenever an ally with Master's Training is defeated, Yoda gains 100% Turn Meter.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Whenever an ally with Master's Training is defeated, Yoda gains 100% Turn Meter and resets all of his cooldowns.
          """)
          embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
 Galactic War: ?           
