@@ -1815,6 +1815,30 @@ Overall: ?/30
                              
          await bot.send_message(message.channel, embed=embed)
                              
+     if message.content.startswith('!zROLO'):   
+         embed=discord.Embed(title="Zeta Rebel Officer Leia Organa --- Dauntless",color = REBEL_COLOR")
+         embed.set_thumbnail(url="https://swgoh.gg/static/img/assets/tex.abilityui_passive_def_resistance.png")
+         embed.set_footer(text="Salporin | SWGoH", icon_url="https://lh3.googleusercontent.com/cWRI4jOO0fq5KP2HOh6V2BoCFhEwI2XghBMrKiamVgFi3YrxdD7lt0_dyIPhBwmpWQ=w300-rw")
+         embed.set_image(url="https://swgoh.gg/static/img/assets/tex.charui_leiahoth.png")
+         embed.add_field(name="Requirements", value="Level 82, 20<:zeta:327437604465278977>, 13 <:omega:327437590657499137> and 30 <:mk3:327437579672879105>")
+         embed.add_field(name="**BEFORE ZETA**", value="""
+Leia has +40% Tenacity. The first time each turn Leia Resists a detrimental effect or suffers a debuff she gains 15% Turn Meter.
+         """)
+         embed.add_field(name="**AFTER ZETA**", value="""
+Leia has +10% Offense and +40% Tenacity. The first time each turn Leia Resists a detrimental effect or suffers a debuff she gains 15% Turn Meter and gains 35% Offense (stacking) until the end of her next turn.
+         """)
+         embed.add_field(name="Character Ratings (**NOTE**: The maximum score is 10)", value="""
+Galactic War: ?           
+Arena: ? - W/ ?      
+Raids: ? - ?
+
+Overall: ?/30
+        """)
+         embed.add_field(name="Priority", value="?")
+         embed.add_field(name="Editors Note", value="'?") 
+                             
+         await bot.send_message(message.channel, embed=embed)                        
+                                                      
 #beginning of characters database
 
     if message.content.startswith("!Aayla-Secura"): 
